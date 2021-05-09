@@ -9,71 +9,29 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <style>
-            /* ------------------------------------ */
-            /* Body CSS */
-            body {
+            body{
                 background-image: url("./img/biomedical_wp.jpg");
-                /* Set rules to fill background */
-                min-height: 100%;
-                min-width: 100%;
-
-                /* Set up proportionate scaling */
-                width: 100%;
-                height: 100%;
-                min-height: 100%;
-                background-attachment: fixed;
-                background-size: cover;
-                /* Set up positioning */
-                /*position: fixed;*/        
             }
-            /* ------------------------------------ */
-            /* Navigation bar CSS */
             #navigation{
                 background-image: url("./img/banner-SAS.jpg");
-                background-size: cover;
-                position: fixed;  /*Set the navbar to fixed position */
-                top: 0; /* Position the navbar at the top of the page */
-                width: 100%;  /* Full width */
-                height: auto;
-                z-index: 1;
             }
-            .navbar-cus {
-                font-size: 15px;
-                font-weight: bold;
-            }
-            .carousel-inner{
-                width:100%;
-                max-height: 100%;
-            }
-            .carousel_img {
-                max-height: 100%;
-                max-width: 100%;
-            }
-            .carousel-control-next,
-            .carousel-control-prev /*, .carousel-indicators */ {
-                filter: invert(100%);
+            .dropdown:hover>.dropdown-menu {
+                display: block;
             }
 
-
-            /* ------------------------------------ */
-            /* Container CSS */
-            .container{
-                position: relative;
-                height: auto;
-                background-color: whitesmoke;
-                opacity: 0.9;
-
+            .dropdown>.dropdown-toggle:active {
+                /*Without this, clicking will make it sticky*/
+                pointer-events: none;
             }
-            /* ------------------------------------ */
-            /* RP Logo CSS */
-            .rplogo {
-                width: 150px;
-                height: auto;
+            #navBarlogo {
+                width: 250px;
+                height:80px;
+                cursor: pointer;
             }
-
-
 
         </style>
+        <link href="css/Home.css" rel="stylesheet" type="text/css"/>
+
     </head>
     <body>
         <!-- Navigation Bar-->
@@ -114,7 +72,7 @@
             </div>
         </nav>
         <!-- End of Navigation Bar -->
-        <br/><br/><br/>
+        <br/><br/><br/><br/>
 
 
         <!--middle container -->
