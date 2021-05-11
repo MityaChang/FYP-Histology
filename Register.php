@@ -11,7 +11,7 @@
 
 <body>
   <div id="formFooter">
-      <a href="./Home.html"><img src="img/RP-Logo.png" alt="Nature" class="rounded mx-auto d-block" /></a>
+      <a href="./MainHomePage.html"><img src="img/RP-Logo.png" alt="Nature" class="rounded mx-auto d-block" /></a>
 
     <h1 style="text-align: center;">Register</h1>
     <p style="text-align: center;">Please fill in this form to register from a RP Account</p>
@@ -94,10 +94,10 @@
 
     <form name="login" action="main_page.html" method="post">
       <a>Already have an account? </a>
-      <a class="underlineHover" href="./Login.html">Login Here</a>
+      <a class="underlineHover" href="./Home.html">Login Here</a>
     </form>
     <h5>OR</h5>
-    <a class="underlineHover" href="./Home.html">Back to Mainpage</a>
+    <a class="underlineHover" href="./MainHomePage.html">Back to Mainpage</a>
 
   </div>
 </body>

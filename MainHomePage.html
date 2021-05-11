@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Histology Learning</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <style>
+            body{
+                background-image: url("./img/biomedical_wp.jpg");
+            }
+            #navigation{
+                background-image: url("./img/banner-SAS.jpg");
+            }
+            .dropdown:hover>.dropdown-menu {
+                display: block;
+            }
+
+            .dropdown>.dropdown-toggle:active {
+                /*Without this, clicking will make it sticky*/
+                pointer-events: none;
+            }
+            #navBarlogo {
+                width: 250px;
+                height:80px;
+                cursor: pointer;
+            }
+        </style>
+        <link href="css/Home.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <!-- Navigation Bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-cus" id="navigation">
+            <a class="navbar-brand" href="#">
+                <img class="rplogo" src="img/RP-Logo.png" alt=""/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link" href="MainHomePage.html">Home</a>
+                    </li>
+                    <li class="navbar-nav ml-auto" style="padding-right: 10px; padding-left: 10px">
+                        <input type="text" class="w3-bar-item w3-input" placeholder="Search..">
+                        <button style="background-color: #007bff; width: 50px;">Go</button> 
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Account
+                        </button>
+
+                        <div class="dropdown-menu" style="padding: 10px">
+
+
+
+                            <a class="dropdown-item" href="http://localhost/C273/FYP-Histology/Login.html">Login</a> 
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="">Register</a>
+                        </div>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- End of Navigation Bar -->
+        <br/><br/><br/>
+
+
+        <!--middle container -->
+        <div class="container">
+            <div class="col-12" >
+                <div class="card">
+                    <div class="container">
+                        <img src="img/1M18_0.5x.jpg" class="cardImage" alt=""/>
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Container -->
+    </body>
+</html>
