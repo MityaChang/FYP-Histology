@@ -273,3 +273,9 @@ input[type=text]:placeholder {
 h6{
     color: #39ace7;
 }
+
+
+#image{
+    height: 150px;
+    width: 150px;
+}
