@@ -16,6 +16,8 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 a {

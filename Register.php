@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <title>Register</title>
   <meta charset="UTF-8">
   <title></title>
   <?php include 'extension.html'?>
