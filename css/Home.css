@@ -61,11 +61,15 @@ body {
     max-width: 63%;
     height: auto;
     background-color: #EAE9EA;
-    border-radius: 150px;
+   
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
     
 
 
 }
+
+
 .card-header:first-child {
     /* Add shadows to create the "card" effect */
     border-radius: 150px;
