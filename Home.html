@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Histology Learning</title>
+        <title>Log In page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/all.css">
@@ -10,105 +10,57 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <style>
             body{
-                background-image: url("./img/biomedical_wp.jpg");
-            }
-            #navigation{
-                background-image: url("./img/banner-SAS.jpg");
-            }
-            .dropdown:hover>.dropdown-menu {
-                display: block;
-            }
-
-            .dropdown>.dropdown-toggle:active {
-                /*Without this, clicking will make it sticky*/
-                pointer-events: none;
-            }
-            #navBarlogo {
-                width: 250px;
-                height:80px;
-                cursor: pointer;
+                background-image: url("./img/loginBgImage.png");
             }
         </style>
-        <link href="css/Home.css" rel="stylesheet" type="text/css"/>
-
+        <link href="css/Login.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <!-- Navigation Bar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-cus" id="navigation">
-            <a class="navbar-brand" href="#">
-                <img class="rplogo" src="img/RP-Logo.png" alt=""/>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <!-- Tabs Titles -->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Home.html">Home</a>
-                    </li>
-                    <li class="navbar-nav ml-auto" style="padding-right: 10px; padding-left: 10px">
-                        <input type="text" class="w3-bar-item w3-input" placeholder="Search..">
-                        <button style="background-color: #007bff; width: 50px;">Go</button> 
-                    </li>
+                <!-- Icon -->
+                <div class="fadeIn first">
+<!--                    <a href="http://localhost/c273/P05/main_page.html">
+                        <img src="img/logo3.png" alt="User Icon" id="icon"/>-->
+                        <img src="img/loginLogo.png" id="image" alt=""/>
+                    <!--</a>-->
 
-                    <li class="nav-item dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Account
-                        </button>
-
-                        <div class="dropdown-menu" style="padding: 10px">
-
-
-
-                            <a class="dropdown-item" href="http://localhost/C273/FYP-Histology/Login.html">Login</a> 
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="">Register</a>
-                        </div>
-                </ul>
-
-            </div>
-        </nav>
-        <!-- End of Navigation Bar -->
-        <br/><br/><br/>
-
-
-        <!--middle container -->
-        <div class="container">
-            <div class="col-12" >
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/1M18_0.5x.jpg" alt="" class="carousel_img"/>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/1M23_0.9x.jpg" alt=""  class="carousel_img"/>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/1M24_0.7x.jpg" alt=""  class="carousel_img"/>
-                            <!--/div>-->
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
                 </div>
+
+                <!-- Login Form -->
+                <form name="login" action="MainHomePage.html" method="post">
+                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="login" required>
+                    <input type="text" id="password" class="fadeIn third" name="login" placeholder="password" required>
+                    <input type="submit" class="fadeIn fourth" value="Log In">
+<!--                    <h5>OR</h5>-->
+<!--                    <div id="formFooter">
+                        <h6 style="text-align:center">Login via Social Media
+                        </h6>
+                        <a href="https://www.facebook.com/" class="fb btn">
+                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                        </a>
+                        <a href="https://twitter.com/" class="twitter btn">
+                            <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                        </a>
+                        <a href="https://myaccount.google.com/intro/profile?pli=1" class="google btn"><i class="fa fa-google fa-fw">
+                            </i> Login with Google+
+                        </a>
+                    </div>-->
+                </form>
+
+                <!-- Remind Passowrd -->
+                <div id="formFooter">
+                    <a class="underlineHover" href="#">Forgot Password?</a>
+                    <form name="login" action="main_page.html" method="post">
+                        <a class="underlineHover" href="Register.php">Register using RP School Account</a>
+                    </form>
+                </div>
+
+
             </div>
         </div>
-        <!-- End of Container -->
+
     </body>
 </html>
