@@ -1,0 +1,155 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 9, 2021, 3:52:22 PM
+    Author     : 19034275
+*/
+
+/* ------------------------------------ */
+/* header CSS */
+.h1-histology {
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black,
+        3px 2px 3px black;
+    color: #c694e0;
+}
+.h1-summary {
+
+    text-shadow: 1px 1px 1px black,
+        3px 2px 3px black;
+    color: #818182;
+}
+
+h5 {
+    color: #33ac04;
+    text-shadow: 1px 1px 1px black,
+        2px 1px 2px black;
+}
+/* ------------------------------------ */
+/* Body CSS */
+body {
+
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 100%;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    /* Set up positioning */
+    /*position: fixed;*/        
+}
+/* ------------------------------------ */
+/* Navigation bar CSS */
+#navigation{
+
+    background-size: cover;
+    position: fixed;  /*Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;  /* Full width */
+    height: auto;
+    z-index: 1;
+}
+.navbar-cus {
+    font-size: 15px;
+    font-weight: bold;
+}
+.carousel-inner{
+    width:100%;
+    max-height: 100%;
+}
+.carousel_img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+
+/* ------------------------------------ */
+/* Container CSS */
+.container{ 
+    max-width: 63%;
+    height: auto;
+    background-color: #EAE9EA;
+
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+
+
+
+}
+
+
+.card-header:first-child {
+    /* Add shadows to create the "card" effect */
+    border-radius: 150px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 150px;
+    width: 750px;
+    height: 300px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#cardImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    border-radius: 150px;
+
+}
+
+.overlay:hover {
+    opacity: 0.5;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* ------------------------------------ */
+/* RP Logo CSS */
+.rplogo {
+    width: 150px;
+    height: auto;
+}
+
+
