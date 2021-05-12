@@ -11,17 +11,21 @@ and open the template in the editor.
 /* ------------------------------------ */
 /* header CSS */
 .h1-histology {
-    font-size: 70px;
+    font-size: 52px;
     text-align: center;
-    text-shadow: 1px 1px 1px black,
-        3px 2px 3px black;
+    text-shadow: 2px 2px 2px black,
+        4px 3px 4px black;
     color: #c694e0;
 }
 .h1-summary {
-
+    font-size: 32px;
     text-shadow: 1px 1px 1px black,
         3px 2px 3px black;
     color: #818182;
+}
+
+h3 {
+    font-size: 18px;
 }
 
 h5 {
@@ -81,12 +85,6 @@ body {
     max-width: 63%;
     height: auto;
     background-color: #EAE9EA;
-
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
-
-
-
 }
 
 
