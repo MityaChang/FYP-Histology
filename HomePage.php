@@ -37,27 +37,8 @@
         <link href="css/navbar.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <!-- Start of Navigation Bar -->
-<!--        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-cus" id="navigation">
-            <a class="navbar-brand" href="#">
-                <img class="rplogo" src="img/RP-Logo.png" alt=""/>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <input type="checkbox" id="click">
-            <label for="click" class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li><a class="active" href="MainHomePage.html">Home</a></li>
-                <li><a href="#">About Histology</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="#">Quiz</a></li>
-            </ul>
-        </nav>-->
          <?php
-        include("navbar.php");
+        include("navBar.php");
         ?>
         <!-- End of Navigation Bar -->
         <br/><br/><br/><br/>

@@ -11,7 +11,7 @@
 
 <body>
   <div id="formFooter">
-      <a href="./MainHomePage.html"><img src="img/RP-Logo.png" alt="Nature" class="rounded mx-auto d-block" /></a>
+      <a href="./HomePage.php"><img src="img/RP-Logo.png" alt="Nature" class="rounded mx-auto d-block" /></a>
 
     <h1 style="text-align: center;">Register</h1>
     <p style="text-align: center;">Please fill in this form to register from a RP Account</p>
