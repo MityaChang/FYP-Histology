@@ -5,7 +5,6 @@
                 <img class="rplogo" src="img/RP-Logo.png" alt=""/>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
             </button>
             <input type="checkbox" id="click">
             <label for="click" class="menu-btn">
