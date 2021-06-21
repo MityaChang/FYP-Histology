@@ -14,7 +14,7 @@
                 <li><a class="active" href="HomePage.php">Home</a></li>
                 <li><a href="#">About Histology</a></li>
                 <li><a href="GalleryPage.php">Gallery</a></li>
-                <li><a href="#">Quiz</a></li>
+                <li><a href="QuizHomePage.php">Quiz</a></li>
             </ul>
         </nav>
         
