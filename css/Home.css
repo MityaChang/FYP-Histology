@@ -23,9 +23,19 @@ and open the template in the editor.
         3px 2px 3px black;
     color: #818182;
 }
+.easy-header {
+    font-size: 42px;
+    text-shadow: 2px 2px 2px black,
+        4px 3px 4px black;
+    color: #b1dfbb;
+}
 
 h3 {
     font-size: 18px;
+}
+
+.question_1_header {
+    padding: 15px;
 }
 
 h5 {
@@ -150,4 +160,20 @@ body {
     height: auto;
 }
 
+/* ------------------------------------ */
+/* Div class */
+.quiz-page-holder {
+    background-color: white;
+    border: 5px solid black;
+    padding: 20px;
+}
+.question-holder {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+}
+.question-placeholder {
+     border-radius: 25px;
+     background-color: #d4edda;
+}
 

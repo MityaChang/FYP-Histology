@@ -47,7 +47,7 @@
         <!--middle container -->
         <div class="container">
             <div class="col-12" >
-                <h1 class="h1-histology"> Histology</h1>
+                <h1 class="h1-histology">Histology</h1>
                 <div class="row ">
                     <div class=" card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
                         <div class="card-body">
