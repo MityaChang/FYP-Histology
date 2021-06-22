@@ -11,7 +11,7 @@
   
   jobs:
     build:
-      runs-on: ubuntu-latest
+      runs-on: windows-latest
   
       steps:
         - uses: actions/checkout@v2
@@ -26,11 +26,11 @@
           uses: andstor/file-existence-action@v1
           with:
             files: "composer.json"
-  
+            
         - name: Run composer install if composer.json exists
           if: steps.check_files.outputs.files_exists == 'true'
           run: composer validate --no-check-publish && composer install --prefer-dist --no-progress
-        
+  
         - name: Upload artifact for deployment job
           uses: actions/upload-artifact@v2
           with:
@@ -56,5 +56,5 @@
           with:
             app-name: 'Histology'
             slot-name: 'production'
-            publish-profile: ${{ secrets.AzureAppService_PublishProfile_d7e2491c6c284e899c4b982c7dd93089 }}
+            publish-profile: ${{ secrets.AzureAppService_PublishProfile_5ab4827075f4400285cae5cb2e1a80ed }}
             package: .
