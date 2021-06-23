@@ -69,25 +69,26 @@
 
             }
             #div1 {
-                width: 200px;
-                margin-left: 60px;
+                width: 320px;
+                margin-left: 30px;
                 height: 50px;
                 padding: 5px;
                 border: 1px solid #aaaaaa;
             }
             #div2 {
-                width: 200px;
-                margin-left: 150px;
+                width: 320px;
+                margin-left: 10px;
                 height: 50px;
                 padding: 5px;
                 border: 1px solid #aaaaaa;
             } 
 
+
             .dragText{
                 color: #000000;
                 text-shadow: 0px 0px #ff0000;
-                border: 2px solid #000000;
                 padding: 5px;
+                border: 2px solid #000000;
                 margin-left: 20px
             }
 
@@ -107,10 +108,12 @@
             }
 
             function drag(ev) {
+                ev.clone;
                 ev.dataTransfer.setData("text", ev.target.id);
             }
 
             function drop(ev) {
+                
                 ev.preventDefault();
                 var data = ev.dataTransfer.getData("text");
                 ev.target.appendChild(document.getElementById(data));
@@ -218,16 +221,19 @@
                                 <img style='margin-left: 20px' src="img/f2-sectionb.png" alt=""/>
                                 <br/><br/>
                                 <div class="row">
-                                    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <div class="testdiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <div class="testdiv" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 </div>
                                 <br/><br/>
                                 <h3>1. Drag and Drop the correct stains to the images.</h3>
-                                <div class="row">
-                                    <h5  class="dragText" id="drag1" draggable="true" ondragstart="drag(event)" width="336" height="69">H&E stain&nbsp;   </h5>
-                                    <h5  class="dragText" id="drag2" draggable="true" ondragstart="drag(event)" width="336" height="69">Reticulin stain:&nbsp;   </h5>
-                                    <h5  class="dragText" id="drag3" draggable="true" ondragstart="drag(event)" width="336" height="69">PAS stain:&nbsp;    </h5>
-                                    <h5  class="dragText" id="drag4" draggable="true" ondragstart="drag(event)" width="336" height="69">Masson's Trichrome stain:&nbsp;   </h5>
+                                <p style="font-size: 12; color: gray">To change answer please drag out your answer then drag in a new answer</p>
+                                    <div  class="container4" style="width: 80%" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                        <div class="row">
+                                    <div  class="dragText" id="drag1" draggable="true" ondragstart="drag(event)" width="336" height="69">H&E stain&nbsp;   </div>
+                                    <div  class="dragText" id="drag2" draggable="true" ondragstart="drag(event)" width="336" height="69">Reticulin stain&nbsp;   </div>                       
+                                    <div  class="dragText" id="drag3" draggable="true" ondragstart="drag(event)" width="336" height="69">PAS stain&nbsp;    </div>
+                                    <div  class="dragText" id="drag4" draggable="true" ondragstart="drag(event)" width="336" height="69">Masson's Trichrome stain&nbsp;   </div>
+                                    </div>
                                 </div>
                             </div>
 
