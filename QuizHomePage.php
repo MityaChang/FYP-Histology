@@ -58,7 +58,7 @@
                             A list of MCQ questions about Histology
                             <br/>
                             <br/>
-                            <a href="#" class="btn btn-info">Start</a>
+                            <a href="QuizPage_Easy.php" class="btn btn-info">Start</a>
                         </div>
                     </div>
                     <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">

@@ -11,10 +11,12 @@
                 <i class="fas fa-bars"></i>
             </label>
             <ul>
-                <li><a class="active" href="HomePage.php">Home</a></li>
+                <li><a class="" href="HomePage.php">Home</a></li>
                 <li><a href="#">About Histology</a></li>
                 <li><a href="GalleryPage.php">Gallery</a></li>
                 <li><a href="QuizHomePage.php">Quiz</a></li>
+                <li><a href="Feedback.php">Feedback</a></li>
+                
             </ul>
         </nav>
         
