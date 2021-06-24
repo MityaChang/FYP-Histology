@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="scripts/ionicons/css/ionicons.min.css">
         <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="css/all.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrapQuiz.min.css">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <link href="css/Login.css" rel="stylesheet" type="text/css"/>

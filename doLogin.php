@@ -15,7 +15,7 @@ if (isset($_POST["submit"])) {
 
     loginUser($link, $username, $pass);
 } else {
-    header("location: http://localhost/FYP-Histology/HomePage.php");
+    header("location: http://localhost/FYP-Histology/FYP-Histology/HomePage.php");
     exit();
 }
 ?>

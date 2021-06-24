@@ -26,8 +26,12 @@ body {
   float: left;
   width: 10%;
   margin-top: 35px;
-  justify-content: center;
-  
+}
+
+.column2 {
+  float: left;
+  width: 10%;
+  margin-top: 35px;
 }
 
 /* The Modal (background) */
@@ -71,12 +75,8 @@ body {
   cursor: pointer;
 }
 
-.mySlides {
+.mySlides, .heartSlides, .lungsSlides {
   display: none;
-}
-
-.heartSlides {
-    display: none;
 }
 
 .cursor {
@@ -115,7 +115,7 @@ body {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: #000;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -131,20 +131,12 @@ body {
   color: white;
 }
 
-.demo {
-  opacity: 0.6;
-}
-.demo1 {
+.demo, .demo1, .demo2 {
   opacity: 0.6;
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-.active1,
-.demo1:hover {
+.active, .active1, .active2, 
+.demo:hover, .demo1:hover, .demo2:hover {
   opacity: 1;
 }
 

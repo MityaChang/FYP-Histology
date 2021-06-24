@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/all.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <style>
@@ -57,25 +57,25 @@
                         <div class="form-group w-25">
                             <h3>Subject:</h3>
                             <input class="form-control" id="id_subject" type="text" placeholder="E.g Quiz questions" required>
-                            
+
                         </div>
                         <div class="form-group w-50">
                             <h3>Name:</h3>
                             <input class="form-control" id="id_name" type="text" placeholder="E.g Jeff" required>
-   
+
                         </div>
                         <div class="form-group w-50">
                             <h3>Email:</h3>
                             <input class="form-control" id="id_email" type="text" placeholder="E.g 1987567@rp.edu.sg" required>
                         </div>
-                          <div class="form-group w-75">
+                        <div class="form-group w-75">
                             <h3>Comments:</h3>
                             <textarea id="id_comments" class="form-control" rows="8"></textarea>
                         </div>
-                        
-                         <button type="submit" class="btn btn-info">Submit</button>
-                         
-                         <br/><br/>
+
+                        <button type="submit" class="btn btn-info">Submit</button>
+
+                        <br/><br/>
                 </form>
             </div>
         </div>
