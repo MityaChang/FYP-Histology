@@ -93,15 +93,15 @@ function emptyIpnutLogin($username, $pass) {
 
 function loginUser($link, $username, $pass) {
     $uidExists = uidExists($link, $username, $username);
-    if ($uidExists === false) {
-        header("Location: http://localhost/FYP-Histology/HomePage.php?error=wronglogins");
+    if ($uidExists == false) {
+        header("Location: http://localhost/FYP-Histology/login.php?error=wronglogins");
     }
     $pwdHashed = $uidExists["userPass"];
     $checkPwd = password_verify($pass, $pwdHashed);
-    if ($checkPwd === false) {
-        header("Location: http://localhost/FYP-Histology/HomePage.php?error=stmtfailed?error=wrongloginf");
+    if ($checkPwd == false) {
+        header("Location: http://localhost/FYP-Histology/login.php?error=stmtfailed?error=wrongloginf");
         exit();
-    } else if ($checkPwd === true) {
+    } else if ($checkPwd == true) {
         session_start();
         $_SESSION["username"] = $uidExists["userName"];
         $_SESSION["email"] = $uidExists["userEmail"];

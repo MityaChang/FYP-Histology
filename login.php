@@ -1,20 +1,33 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>Log In page</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Login</title>
+        <link rel="stylesheet" href="scripts/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="scripts/ionicons/css/ionicons.min.css">
+        <link rel="stylesheet" href="css/form.css">
         <link rel="stylesheet" href="css/all.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
-        <style>
+        <link href="css/Login.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
             body{
+                width: 100%;
                 background-image: url("./img/loginBgImage.png");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
             }
         </style>
-        <link href="css/Login.css" rel="stylesheet" type="text/css"/>
+
     </head>
+
     <body>
         <div class="wrapper fadeInDown">
             <div id="formContent">
@@ -31,15 +44,15 @@
 
                 <!-- Login Form -->
                 <form name="login" action="doLogin.php" method="post">
-                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="username/email" required>
-                    <input type="text" id="password" class="fadeIn second" name="password" placeholder="password" required>
-                    <input type="submit" class="fadeIn fourth" value="Log In">
+                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="username/email" >
+                    <input type="password" id="password" class="fadeIn second" name="password" placeholder="password" >
+                    <input type="submit" name="submit" class="fadeIn fourth" value="Log In">
                 </form>
 
                 <!-- Remind Passowrd -->
                 <div id="formFooter">
                     <a class="underlineHover" href="#">Forgot Password?</a>
-                    <form name="login" action="main_page.html" method="post">
+                    <form name="login" action="login.php" method="post">
                         <a class="underlineHover" href="Register.php">Register using RP School Account</a>
                     </form>
                 </div>

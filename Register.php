@@ -83,10 +83,10 @@
 
     <form name="login" action="main_page.html" method="post">
         <a>Already have an account? </a>
-        <a class="underlineHover" href="./Home.html">Login Here</a>
+        <a class="underlineHover" href="./login.php">Login Here</a>
     </form>
     <h5>OR</h5>
-    <a class="underlineHover" href="./MainHomePage.html">Back to Mainpage</a>
+    <a class="underlineHover" href="./login.php">Back to Mainpage</a>
 
 </div>
 </body>
