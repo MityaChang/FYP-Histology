@@ -5,10 +5,10 @@ if (isset($_POST["submit"])) {
     $username = $_POST["login"];
     $pass = $_POST["password"];
 
-    include 'dbFunctions.php';
-    include 'functions.php';
+    require_once 'dbFunctions.php';
+    require_once 'functions.php';
 
-    if (emptyIpnutLogin($username, $pass)) {
+    if (emptyIpnutLogin($username, $pass) != false) {
         header("location: login.php?error=emptyinput");
         exit();
     }

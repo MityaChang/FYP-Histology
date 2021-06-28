@@ -109,5 +109,18 @@ function loginUser($link, $username, $pass) {
         exit();
     }
 }
+    
+//    $query = "select * from users where users where userName = '$username' and userPass = '".password_hash($pass, PASSWORD_DEFAULT)."'";
+//    $result = mysqli_query($link, $query);
+//    if (empty($result)) {
+//        echo $query;
+//    } else {
+//        foreach ($result as $i) {
+//            session_start();
+//            $_SESSION['email'] = $i['userEmail'];
+//            $_SESSION['username'] = $i['userName'];
+//        } 
+//    }
+//}
 
 ?>
