@@ -103,9 +103,9 @@ function loginUser($link, $username, $pass) {
         exit();
     } else if ($checkPwd == true) {
         session_start();
-        $_SESSION["username"] = $uidExists["userName"];
-        $_SESSION["email"] = $uidExists["userEmail"];
-        header("Location: http://localhost/FYP-Histology/HomePage.php");
+        $_SESSION["username"] = $uidExists["userEmail"];
+        $_SESSION["email"] = $uidExists["userName"];
+        header("Location: HomePage.php");
         exit();
     }
 }

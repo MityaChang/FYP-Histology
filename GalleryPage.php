@@ -47,7 +47,9 @@
                         <div class="parent">
                         <img src="img/skeletal-muscle/1M15_0.7x.jpg" style="width:100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                     </div>
+                        
                     </div>
+                    <p style="margin-top: 100px">tsadasdasdadasdest</p>
                     <div class="column" style="display:none">
                         <img src="img/skeletal-muscle/1M18_0.5x.jpg" style="width:100%;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
                     </div>
@@ -181,6 +183,7 @@
                             <img src="img/heart/organ1heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(1)" class="hover-shadow cursor">
                         </div>
                         </div>
+                        <p style="margin-top: 100px">testr</p>
                         <div class="column" style="display:none">
                             <img src="img/heart/organ2heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(2)" class="hover-shadow cursor">
                         </div>
