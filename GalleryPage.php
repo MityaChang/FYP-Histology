@@ -289,7 +289,7 @@
 
                             <div class="lungsSlides">
                                 <div class="numbertext">1 / 6</div>
-                                <img src="img/liver/liver.png" style="width:100%">
+                                <img src="img/lungs/normal-lungs.png" style="width:100%">
                             </div>
 
                             <div class="lungsSlides">
