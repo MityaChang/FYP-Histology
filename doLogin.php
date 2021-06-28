@@ -8,7 +8,7 @@ if (isset($_POST["submit"])) {
     include 'dbFunctions.php';
     include 'functions.php';
 
-    if (!emptyIpnutLogin($username, $pass)) {
+    if (emptyIpnutLogin($username, $pass)) {
         header("location: login.php?error=emptyinput");
         exit();
     }
