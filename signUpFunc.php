@@ -10,35 +10,35 @@ if (isset($_POST["submitBtn"])) {
 //    require_once 'dbFunctions.php';
     //Inputs empty
     if (emptyIpnutSignup($email, $name, $pass, $passwordRepeat) !== false) {
-        header("location: http://localhost/FYP-Histology/Register.php?error=emptyinput");
+        header("location: Register.php?error=emptyinput");
         exit();
     }
 
     if (invalidUid($name) !== false) {
-        header("location: http://localhost/FYP-Histology/Register.php?error=invaliduid");
+        header("location: Register.php?error=invaliduid");
         exit();
     }
 
     if (invalidEmail($email) !== false) {
-        header("location: http://localhost/FYP-Histology/Register.php?error=invalidemail");
+        header("location: Register.php?error=invalidemail");
         exit();
     }
 
     if (pwdMatch($pass, $passwordRepeat) !== false) {
-        header("location: http://localhost/FYP-Histology/Register.php?error=pwddontmatch");
+        header("location: Register.php?error=pwddontmatch");
         exit();
     }
 
     if (uidExists($link, $name, $email) !== false) {
-        header("location: http://localhost/FYP-Histology/Register.php?error=usernametaken");
+        header("location: Register.php?error=usernametaken");
         exit();
     }
 
     createUser($link, $email, $name, $pass);
-    header("Location: http://localhost/FYP-Histology/HomePage.php");
+    header("Location: HomePage.php");
     exit();
 } else {
-    header("location: http://localhost/FYP-Histology/Register.php");
+    header("location: Register.php");
     exit();
 }
 

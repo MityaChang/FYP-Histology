@@ -9,13 +9,13 @@ if (isset($_POST["submit"])) {
     require_once 'functions.php';
 
     if (emptyIpnutLogin($username, $pass) != false) {
-        header("location: http://localhost/FYP-Histology/login.php?error=emptyinput");
+        header("location: login.php?error=emptyinput");
         exit();
     }
 
     loginUser($link, $username, $pass);
 } else {
-    header("location: http://localhost/FYP-Histology/FYP-Histology/HomePage.php");
+    header("location: HomePage.php");
     exit();
 }
 ?>

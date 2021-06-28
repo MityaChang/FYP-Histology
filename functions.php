@@ -44,7 +44,7 @@ function uidExists($link, $name, $email) {
     $sql = "SELECT * FROM users WHERE userName  = ? OR userEmail  = ?;";
     $stmt = mysqli_stmt_init($link);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("Location: http://localhost/FYP-Histology/HomePage.php?error=stmtfailed");
+        header("Location: HomePage.php?error=stmtfailed");
         exit();
     }
 
@@ -67,7 +67,7 @@ function createUser($link, $email, $name, $pass) {
     $sql = "INSERT INTO users (userName, userEmail, userPass) VALUES(?,?,?);";
     $stmt = mysqli_stmt_init($link);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("Location: http://localhost/FYP-Histology/HomePage.php?error=stmtfailed");
+        header("Location: HomePage.php?error=stmtfailed");
         exit();
     }
 
@@ -76,7 +76,7 @@ function createUser($link, $email, $name, $pass) {
     mysqli_stmt_bind_param($stmt, "sss", $email, $name, $hashedPwd);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    header("Location: http://localhost/FYP-Histology/HomePage.php");
+    header("Location: HomePage.php");
     exit();
 }
 
@@ -94,12 +94,12 @@ function emptyIpnutLogin($username, $pass) {
 function loginUser($link, $username, $pass) {
     $uidExists = uidExists($link, $username, $username);
     if ($uidExists == false) {
-        header("Location: http://localhost/FYP-Histology/login.php?error=wronglogins");
+        header("Location: login.php?error=wronglogins");
     }
     $pwdHashed = $uidExists["userPass"];
     $checkPwd = password_verify($pass, $pwdHashed);
     if ($checkPwd == false) {
-        header("Location: http://localhost/FYP-Histology/login.php?error=stmtfailed?error=wrongloginf");
+        header("Location: login.php?error=stmtfailed?error=wrongloginf");
         exit();
     } else if ($checkPwd == true) {
         session_start();
