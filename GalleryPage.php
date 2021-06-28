@@ -25,6 +25,7 @@
             #navigation{
                 background-image: url("./img/banner-SAS.jpg");
             }
+
         </style>
     </head>
     <body>
@@ -36,50 +37,58 @@
         <br/><br/><br/><br/>
 
         <!----------------------------------------------------- Container ------------------------------------------------------------------------->
-        <!-------------------------------------------------- Skeletal Muscle Light box ------------------------------------------------------------>
+
         <div class="container">
             <div class="col-12">
-                <h1 class="h1-histology">Gallery</h1>
-                <h2 style="text-align:left; padding-top: 40px">Skeletal Muscle</h2>
+                <h1 class="h1-histology">Slides</h1>
                 <div class="row">
                     
-                    <div class="column" style="padding-left:20px">
-                        <div class="parent">
-                        <img src="img/skeletal-muscle/1M15_0.7x.jpg" style="width:100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                    </div>
-                        
-                    </div>
-                    <p style="margin-top: 100px">tsadasdasdadasdest</p>
-                    <div class="column" style="display:none">
-                        <img src="img/skeletal-muscle/1M18_0.5x.jpg" style="width:100%;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                    </div>
-                    <div class="column" style="display:none">
-                        <img src="img/skeletal-muscle/1M19_0.7x.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                    </div>
-                    <div class="column" style="display:none">
-                        <img src="img/skeletal-muscle/1M22_1.5x.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                    </div>
-                    <div class="column" style="display:none">
-                        <img src="img/skeletal-muscle/1M23_0.9x.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-                    </div>
-                    <div class="column" style="display:none">
-                        <img src="img/skeletal-muscle/1M24_0.7x.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-                    </div>
-                    <div class="column" style="display:none">
-                        <img src="img/skeletal-muscle/1M09_1.4x.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-                    </div>
-                    <div class="column" style="display:none">
-                        <img src="img/skeletal-muscle/1M13_0.8x.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-                    </div>
-                    <div class="column" style="display:none">
-                        <img src="img/skeletal-muscle/1M16_0.7x.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-                    </div>
-                    <div class="column" style="display:none">
-                        <img src="img/skeletal-muscle/1M17_0.8x.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
-                    </div>
-                </div>          
-                <!------------------------------------------ End of Skeletal Muscle Light box ------------------------------------------------------->
+                     <!----------------------------------------------------- Table ------------------------------------------------------------------------->
+                    <table>
+                        <tr>
+                            <th>Organ's Name</th>
+                            <th>Description</th>
+                            <th>Slides</th>
+                        </tr>
+                        <tr>
+                            <td><b>Skeletal Muscle</b></td>
+                            <td>Placeholder for Skeletal Muscles
+                                <br>Click on the image to find out more!</td>
+                            <td>
+                                <img src="img/skeletal-muscle/1M15_0.7x.jpg" style="width:100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Heart</b></td>
+                            <td>Placeholder for Heart.
+                                <br>Click on the image to find out more!</td>
+                            <td><img src="img/heart/organ1heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(1)" class="hover-shadow cursor">
+                        </tr>
+                        <tr>
+                            <td><b>Lungs</b></td>
+                            <td>Lungs are important organ that helps with gaseous exchange. 
+                                <br>Have you ever wonder how does it looks like under microscope?<br>
+                                <br>Click on the image to find out more!</td>
+                            <td><img src="img/lungs/f1-lungs1-thumbnail.png" style="width:100%" onclick="openLungsModal();currentSlide2(1)" class="hover-shadow cursor"></td>
+                        </tr>
+                         <tr>
+                            <td><b>Liver</b></td>
+                            <td>
+                                <br>Liver is one of the largest organ in the body and it helps to detoxifies chemicals and metabolizes drugs.<br>
+                                <br>Click on the image to find out more about how the liver looks like under the microscope!</td>
+                            <td><img src="" style="width:100%" onclick="openLungsModal();currentSlide2(1)" class="hover-shadow cursor"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Kidney</b></td>
+                            <td>
+                                <br>Without your kidney, your body would be filled with waste.<br>
+                                <br>Give our kidneys some appreciation and let's look at what makes it up under the microscope!</td>
+                            <td><img src="" style="width:100%" onclick="openLungsModal();currentSlide2(1)" class="hover-shadow cursor"></td>
+                        </tr>
+                    </table>
 
+
+                </div>
 
                 <!-------------------------------------------------- Skeletal Modal ----------------------------------------------------------------->
                 <div id="myModal" class="modal">
@@ -173,46 +182,8 @@
                 </div>         
                 <!------------------------------------------ End of Skeletal Muscle Modal ------------------------------------------------------->
 
-                <!-------------------------------------------------- Heart Light box ---------------------------------------------------------------->
+               
                 <div class="col-12" >
-                    <h2 style="text-align:left; padding-top: 40px">Heart</h2>
-
-                    <div class="row">
-                        <div class="column">
-                            <div class="parent">
-                            <img src="img/heart/organ1heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(1)" class="hover-shadow cursor">
-                        </div>
-                        </div>
-                        <p style="margin-top: 100px">testr</p>
-                        <div class="column" style="display:none">
-                            <img src="img/heart/organ2heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(2)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/heart/organ3heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(3)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/heart/organ4heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(4)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/heart/organ5heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(5)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/heart/organ6heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(6)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/heart/organ7heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(7)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/heart/organ8heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(8)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/heart/organ9heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(9)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/heart/organ10heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(10)" class="hover-shadow cursor">
-                        </div>
-                    </div>
-
                     <!------------------------------------------ End of Heart Light box -------------------------------------------------------------->
                     <div id="heartModal" class="modal">
                         <span class="close cursor" onclick="closeHeartModal()">&times;</span>
@@ -307,43 +278,8 @@
                 <!---------------------------------------------- End of Heart Box ------------------------------------------------------------->
 
 
-                <!-------------------------------------------------- Lungs Light box ---------------------------------------------------------------->
-                <div class="col-12" >
-                    <h2 style="text-align:left; padding-top: 40px">Lungs</h2>
-
-                    <div class="row">
-                        <div class="column">
-                            <div class="parent">
-                                <img src="img/lungs/f1-lungs1-thumbnail.png" style="width:100%" onclick="openLungsModal();currentSlide2(1)" class="hover-shadow cursor">
-                            </div>
-                            <br>
-                        <div class="column" style="display:none">
-                            <img src="img/lungs/f1-lungs1-thumbnail.png" style="width:100%" onclick="openLungsModal();currentSlide2(2)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/lungs/f2-lungs2-thumbnail.png" style="width:100%" onclick="openLungsModal();currentSlide2(3)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/organ4heart.jpg" style="width:100%" onclick="openLungsModal();currentSlide2(4)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/organ5heart.jpg" style="width:100%" onclick="openLungsModal();currentSlide2(5)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/organ6heart.jpg" style="width:100%" onclick="openLungsModal();currentSlide2(6)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/organ7heart.jpg" style="width:100%" onclick="openLungsModal();currentSlide2(7)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/organ8heart.jpg" style="width:100%" onclick="openLungsModal();currentSlide2(8)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/organ9heart.jpg" style="width:100%" onclick="openLungsModal();currentSlide2(9)" class="hover-shadow cursor">
-                        </div>
-                        <div class="column" style="display:none">
-                            <img src="img/organ10heart.jpg" style="width:100%" onclick="openLungsModal();currentSlide2(10)" class="hover-shadow cursor">
-                        </div>
+               
+                <div class="col-12" >                   
                     </div>
 
                     <!------------------------------------------ End of Heart Light box -------------------------------------------------------------->
@@ -352,49 +288,32 @@
                         <div class="modal-content">
 
                             <div class="lungsSlides">
-                                <div class="numbertext">1 / 10</div>
-                                <img src="img/lungs/normal-lungs.png" style="width:100%">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="img/liver/liver.png" style="width:100%">
                             </div>
 
                             <div class="lungsSlides">
-                                <div class="numbertext">2 / 10</div>
+                                <div class="numbertext">2 / 6</div>
+                                <img src="img/lungs/stains.png" style="width:100%">
+                            </div>
+
+                            <div class="lungsSlides">
+                                <div class="numbertext">3 / 6</div>
                                 <img src="img/lungs/f1-lungs1.png" style="width:100%">
                             </div>
 
                             <div class="lungsSlides">
-                                <div class="numbertext">3 / 10</div>
+                                <div class="numbertext">4 / 6</div>
                                 <img src="img/lungs/f2-lungs2.png" style="width:100%">
                             </div>
-
                             <div class="lungsSlides">
-                                <div class="numbertext">4 / 10</div>
-                                <img src="img/lungs/normal-lungs.png" style="width:100%">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="img/lungs/f3-lungs3.png" style="width:100%">
                             </div>
                             <div class="lungsSlides">
-                                <div class="numbertext">5 / 10</div>
-                                <img src="img/lungs/f1-lungs1-thumbnail.png" style="width:100%">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="img/lungs/f4-lungs4.png" style="width:100%">
                             </div>
-                            <div class="lungsSlides">
-                                <div class="numbertext">6 / 10</div>
-                                <img src="img/lungs/f1-lungs1-thumbnail.png" style="width:100%">
-                            </div>
-                            <div class="lungsSlides">
-                                <div class="numbertext">7 / 10</div>
-                                <img src="img/lungs/f1-lungs1-thumbnail.png" style="width:100%">
-                            </div>
-                            <div class="lungsSlides">
-                                <div class="numbertext">8 / 10</div>
-                                <img src="img/lungs/f1-lungs1-thumbnail.png" style="width:100%">
-                            </div>
-                            <div class="lungsSlides">
-                                <div class="numbertext">9 / 10</div>
-                                <img src="img/lungs/f1-lungs1-thumbnail.png" style="width:100%">
-                            </div>
-                            <div class="lungsSlides">
-                                <div class="numbertext">10 / 10</div>
-                                <img src="img/lungs/f1-lungs1-thumbnail.png" style="width:100%">
-                            </div>
-
 
                             <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides2(1)">&#10095;</a>
@@ -408,34 +327,22 @@
                             <img class="demo2 cursor" src="img/lungs/normal-lungs.png" style="width:95%" onclick="currentSlide2(1)" alt="Slide on Normal Lung">
                         </div>
                         <div class="column1">
-                            <img class="demo2 cursor" src="img/lungs/f1-lungs1-thumbnail.png" style="width:95%" onclick="currentSlide2(2)" alt="Figure 1: Lung tissue stained with H&E stain.">
+                            <img class="demo2 cursor" src="img/lungs/stains.png" style="width:95%" onclick="currentSlide2(2)" alt="Slide on Stains">
 
                         </div>
                         <div class="column1">
-                            <img class="demo2 cursor" src="img/lungs/f2-lungs2.png" style="width:95%" onclick="currentSlide2(3)" alt="Heart 3">
+                            <img class="demo2 cursor" src="img/lungs/f1-lungs1.png" style="width:95%" onclick="currentSlide2(3)" alt="Figure 1: Lung tissue stained with H&E stain.">
                         </div>
                         <div class="column1">
-                            <img class="demo2 cursor" src="img/lungs/f1-lungs1-thumbnail.png" style="width:95%" onclick="currentSlide2(4)" alt="Heart 4">
+                            <img class="demo2 cursor" src="img/lungs/f2-lungs2.png" style="width:95%" onclick="currentSlide2(4)" alt="Figure 2: Lung tissue stained with MT stain.">
                         </div>
                         <div class="column1">
-                            <img class="demo2 cursor" src="img/lungs/f1-lungs1-thumbnail.png" style="width:95%" onclick="currentSlide2(5)" alt="Heart 5">
+                            <img class="demo2 cursor" src="img/lungs/f3-lungs3.png" style="width:95%" onclick="currentSlide2(5)" alt="Figure 3: Lung tissue stained with Reticulin stain.">
                         </div>
                         <div class="column1">
-                            <img class="demo2 cursor" src="img/lungs/f1-lungs1-thumbnail.png" style="width:95%" onclick="currentSlide2(6)" alt="Heart 6">
+                            <img class="demo2 cursor" src="img/lungs/f4-lungs4.png" style="width:95%" onclick="currentSlide2(6)" alt="Figure 4: Lung tissue stained with PAS stain.">
                         </div>
-                        <div class="column1">
-                            <img class="demo2 cursor" src="img/lungs/f1-lungs1-thumbnail.png" style="width:95%" onclick="currentSlide2(7)" alt="Heart 7">
-                        </div>
-                        <div class="column1">
-                            <img class="demo2 cursor" src="img/lungs/f1-lungs1-thumbnail.png" style="width:95%" onclick="currentSlide2(8)" alt="Heart 8">
-                        </div>
-                        <div class="column1">
-                            <img class="demo2 cursor" src="img/lungs/f1-lungs1-thumbnail.png" style="width:95%" onclick="currentSlide2(9)" alt="Heart 9">
-                        </div>
-                        <div class="column1">
-                            <img class="demo2 cursor" src="img/lungs/f1-lungs1-thumbnail.png" style="width:95%" onclick="currentSlide2(10)" alt="Heart 10">
-                        </div>   
-                    </div>     
+                    </div>   
                     <!---------------------------------------------- End of Lungs Modal ------------------------------------------------------------->
                 </div>        
                 <!---------------------------------------------- End of Lungs Box ------------------------------------------------------------->
