@@ -51,7 +51,7 @@
                 <div class="row ">
                     <div class=" card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
                         <div class="card-body">
-                            <img src="img/1M18_0.5x.jpg" class ="round-circle" id="cardImage" alt=""/>
+                            <img src="img/skeletal-muscle/1M18_0.5x.jpg" class ="round-circle" id="cardImage" alt=""/>
                             <div class="overlay">
                                 <div class="text">Hello World</div>
                             </div>
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
-                        <img src="img/1M23_0.9x.jpg" class ="round-circle" id="cardImage" alt=""/>
+                        <img src="img/skeletal-muscle/1M23_0.9x.jpg" class ="round-circle" id="cardImage" alt=""/>
                         <div class="overlay">
                             <div class="text">Hello World2</div>
                         </div>
@@ -67,7 +67,7 @@
                     </div>
 
                     <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
-                        <img src="img/1M24_0.7x.jpg" class ="round-circle" id="cardImage" alt=""/>
+                        <img src="img/skeletal-muscle/1M24_0.7x.jpg" class ="round-circle" id="cardImage" alt=""/>
                         <div class="overlay">
                             <div class="text">Hello World3</div>
                         </div>

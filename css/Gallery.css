@@ -148,4 +148,13 @@ body {
     height: auto;
 }
 
+div.parent{ 
+    border:solid black 1px;
+   
+    padding:5px; 
+    width:125%;
+   
+}
+
+
 
