@@ -8,7 +8,7 @@ if (isset($_POST["submit"])) {
     require_once 'dbFunctions.php';
     require_once 'functions.php';
 
-    if (emptyIpnutLogin($username, $pass) !== false) {
+    if (emptyIpnutLogin($username, $pass) != false) {
         header("location: http://localhost/FYP-Histology/login.php?error=emptyinput");
         exit();
     }

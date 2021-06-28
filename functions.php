@@ -83,7 +83,7 @@ function createUser($link, $email, $name, $pass) {
 //Login Function
 function emptyIpnutLogin($username, $pass) {
     $result;
-    if (empty($username) || empty($pass)) {
+    if (empty($username) && empty($pass)) {
         $result = true;
     } else {
         $result = false;
