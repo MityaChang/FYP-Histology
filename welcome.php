@@ -24,8 +24,18 @@ if (!(isset($_SESSION['email']))) {
         <script src="js/bootstrap.min.js"  type="text/javascript"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
+    <style>
+        .navbar-custom{
+            background-color: #000000
+        }
+        #textColor{
+            color: white;
+        }
+
+    </style>
     <body>
-        <nav class="navbar navbar-default title1">
+        <nav class="navbar navbar-custom title1">
+
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -34,19 +44,19 @@ if (!(isset($_SESSION['email']))) {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><b>Histology Quiz</b></a>
+                    <a class="navbar-brand" href="#" id="textColor"><b>Histology Quiz</b></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-left">
-                        <li <?php if (@$_GET['q'] == 1) echo'class="active"'; ?> ><a href="welcome.php?q=1"><i class="bi bi-house-door-fill"></i>&nbsp;Home<span class="sr-only">(current)</span></a></li>
-                        <li <?php if (@$_GET['q'] == 2) echo'class="active"'; ?>> <a href="welcome.php?q=2"><i class="bi bi-book"></i>&nbsp;History</a></li>
-                        <li <?php if (@$_GET['q'] == 3) echo'class="active"'; ?>> <a href="welcome.php?q=3"><i class="bi bi-bar-chart-line-fill"></i>&nbsp;Ranking</a></li>
+                        <li <?php if (@$_GET['q'] == 1) echo'class="active"'; ?> ><a href="welcome.php?q=1" id="textColor"><i class="bi bi-house-door-fill"></i>&nbsp;Home<span class="sr-only">(current)</span></a></li>
+                        <li <?php if (@$_GET['q'] == 2) echo'class="active"'; ?>> <a href="welcome.php?q=2" id="textColor"><i class="bi bi-book"></i>&nbsp;History</a></li>
+                        <li <?php if (@$_GET['q'] == 3) echo'class="active"'; ?>> <a href="welcome.php?q=3" id="textColor"><i class="bi bi-bar-chart-line-fill"></i>&nbsp;Ranking</a></li>
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li <?php echo''; ?> > <a href="QuizHomePage.php"><i class="bi bi-box-arrow-right"></i>&nbsp;Back to Main Page</a></li>
+                        <li <?php echo''; ?> > <a href="QuizHomePage.php" id="textColor"><i class="bi bi-box-arrow-right"></i>&nbsp;Back to Main Page</a></li>
                     </ul>
 
 
@@ -58,30 +68,30 @@ if (!(isset($_SESSION['email']))) {
         <br><br>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-<?php
-if (@$_GET['q'] == 1) {
-    $result = mysqli_query($link, "SELECT * FROM quiz ORDER BY date DESC") or die('Error');
-    echo '<div class="panel"><div class="table-responsive"><table class="table table-striped title1">
+                <div class="col-12">
+                    <?php
+                    if (@$_GET['q'] == 1) {
+                        $result = mysqli_query($link, "SELECT * FROM quiz ORDER BY date DESC") or die('Error');
+                        echo '<div class="panel"><div class="table-responsive"><table class="table table-striped title1">
                     <tr><td><center><b>S.N.</b></center></td><td><center><b>Topic</b></center></td><td><center><b>Total question</b></center></td><td><center><b>Marks</center></b></td><td><center><b>Action</b></center></td></tr>';
-    $c = 1;
-    while ($row = mysqli_fetch_array($result)) {
-        $title = $row['title'];
-        $total = $row['total'];
-        $sahi = $row['sahi'];
-        $eid = $row['eid'];
-        $q12 = mysqli_query($link, "SELECT score FROM history WHERE eid='$eid' AND email='$email'")or die('Error98');
-        $rowcount = mysqli_num_rows($q12);
-        if ($rowcount == 0) {
-            echo '<tr><td><center>' . $c++ . '</center></td><td><center>' . $title . '</center></td><td><center>' . $total . '</center></td><td><center>' . $sahi * $total . '</center></td><td><center><b><a href="welcome.php?q=quiz&step=2&eid=' . $eid . '&n=1&t=' . $total . '" class="btn sub1" style="color:black;margin:0px;background:#1de9b6"><i class="bi bi-box-arrow-in-up-right"></i>&nbsp;<span class="title1"><b>Start</b></span></a></b></center></td></tr>';
-        } else {
-            echo '<tr style="color:#99cc32"><td><center>' . $c++ . '</center></td><td><center>' . $title . '&nbsp;<i class="bi bi-check-lg"></i></center></td><td><center>' . $total . '</center></td><td><center>' . $sahi * $total . '</center></td><td><center><b><a href="update.php?q=quizre&step=25&eid=' . $eid . '&n=1&t=' . $total . '" class="pull-right btn sub1" style="color:black;margin:0px;background:red"><i class="bi bi-arrow-counterclockwise"></i>&nbsp;<span class="title1"><b>Restart</b></span></a></b></center></td></tr>';
-        }
-    }
-    $c = 0;
-    echo '</table></div></div>';
-}
-?>
+                        $c = 1;
+                        while ($row = mysqli_fetch_array($result)) {
+                            $title = $row['title'];
+                            $total = $row['total'];
+                            $sahi = $row['sahi'];
+                            $eid = $row['eid'];
+                            $q12 = mysqli_query($link, "SELECT score FROM history WHERE eid='$eid' AND email='$email'")or die('Error98');
+                            $rowcount = mysqli_num_rows($q12);
+                            if ($rowcount == 0) {
+                                echo '<tr><td><center>' . $c++ . '</center></td><td><center>' . $title . '</center></td><td><center>' . $total . '</center></td><td><center>' . $sahi * $total . '</center></td><td><center><b><a href="welcome.php?q=quiz&step=2&eid=' . $eid . '&n=1&t=' . $total . '" class="btn sub1" style="color:black;margin:0px;background:#1de9b6"><i class="bi bi-box-arrow-in-up-right"></i>&nbsp;<span class="title1"><b>Start</b></span></a></b></center></td></tr>';
+                            } else {
+                                echo '<tr style="color:#99cc32"><td><center>' . $c++ . '</center></td><td><center>' . $title . '&nbsp;<i class="bi bi-check-lg"></i></center></td><td><center>' . $total . '</center></td><td><center>' . $sahi * $total . '</center></td><td><center><b><a href="update.php?q=quizre&step=25&eid=' . $eid . '&n=1&t=' . $total . '" class="pull-right btn sub1" style="color:black;margin:0px;background:red"><i class="bi bi-arrow-counterclockwise"></i>&nbsp;<span class="title1"><b>Restart</b></span></a></b></center></td></tr>';
+                            }
+                        }
+                        $c = 0;
+                        echo '</table></div></div>';
+                    }
+                    ?>
 
                     <?php
                     if (@$_GET['q'] == 'quiz' && @$_GET['step'] == 2) {
