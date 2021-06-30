@@ -20,7 +20,7 @@
         $email = mysqli_real_escape_string($link,$email);
         $password = mysqli_real_escape_string($link,$password);
         
-        $result = mysqli_query($link,"SELECT email FROM admin WHERE email = '$email' and password = '$password'") or die('Error');
+        $result = mysqli_query($link,"SELECT email FROM admin WHERE email = '$email' and password = '$password'") or die(mysqli_connect_error());
         $count=mysqli_num_rows($result);
         if($count==1)
         {
