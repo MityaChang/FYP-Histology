@@ -65,7 +65,7 @@ if (!(isset($_SESSION['email']))) {
                 </div>
             </div>
         </nav>
-        <br><br>
+        <br><br>    0.
         <div class="container">
             <div class="row">
                 <div class="col-12">
