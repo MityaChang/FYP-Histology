@@ -66,7 +66,7 @@ if (!(isset($_SESSION['email']))) {
                         while ($row = mysqli_fetch_array($q)) {
                             $e = $row['email'];
                             $s = $row['score'];
-                            $q12 = mysqli_query($link, "SELECT * FROM user WHERE email='$e' ")or die('Error231');
+                            $q12 = mysqli_query($link, "SELECT * FROM users WHERE userName='$e' ")or die('Error231');
                             while ($row = mysqli_fetch_array($q12)) {
                                 $name = $row['name'];
                             }

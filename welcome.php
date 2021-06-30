@@ -103,7 +103,7 @@ if (!(isset($_SESSION['email']))) {
                         while ($row = mysqli_fetch_array($q)) {
                             $qns = $row['qns'];
                             $qid = $row['qid'];
-                            echo '<b>Question &nbsp;' . $sn . '&nbsp;::<br /><br />' . $qns . '</b><br /><br />';
+                            echo '<b>Question &nbsp;' . $sn . '&nbsp;:<br /><br />' . $qns . '</b><br /><br />';
                         }
                         $q = mysqli_query($link, "SELECT * FROM options WHERE qid='$qid' ");
                         echo '<form action="update.php?q=quiz&step=2&eid=' . $eid . '&n=' . $sn . '&t=' . $total . '&qid=' . $qid . '" method="POST"  class="form-horizontal">
@@ -112,9 +112,9 @@ if (!(isset($_SESSION['email']))) {
                         while ($row = mysqli_fetch_array($q)) {
                             $option = $row['option'];
                             $optionid = $row['optionid'];
-                            echo'<input type="radio" name="ans" value="' . $optionid . '">&nbsp;' . $option . '<br /><br />';
+                            echo'<input type="radio" name="ans" required value="' . $optionid . '">&nbsp;' . $option . '<br /><br />';
                         }
-                        echo'<br /><button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span>&nbsp;Submit</button></form></div>';
+                        echo'<br /><button type="submit" class="btn btn-primary"><i class="bi bi-arrow-right-square"></i>&nbsp;Next</button></form></div>';
                     }
 
                     if (@$_GET['q'] == 'result' && @$_GET['eid']) {
@@ -129,14 +129,14 @@ if (!(isset($_SESSION['email']))) {
                             $r = $row['sahi'];
                             $qa = $row['level'];
                             echo '<tr style="color:#66CCFF"><td>Total Questions</td><td>' . $qa . '</td></tr>
-                                <tr style="color:#99cc32"><td>right Answer&nbsp;<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td><td>' . $r . '</td></tr> 
-                                <tr style="color:red"><td>Wrong Answer&nbsp;<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></td><td>' . $w . '</td></tr>
-                                <tr style="color:#66CCFF"><td>Score&nbsp;<span class="glyphicon glyphicon-star" aria-hidden="true"></span></td><td>' . $s . '</td></tr>';
+                                <tr style="color:#99cc32"><td>right Answer&nbsp;<i class="bi bi-check-circle"></i></td><td>' . $r . '</td></tr> 
+                                <tr style="color:red"><td>Wrong Answer&nbsp;<i class="bi bi-x-octagon-fill"></i></td><td>' . $w . '</td></tr>
+                                <tr style="color:#66CCFF"><td>Score&nbsp;<i class="bi bi-clipboard-data"></i></td><td>' . $s . '</td></tr>';
                         }
                         $q = mysqli_query($link, "SELECT * FROM rank WHERE  email='$email' ")or die('Error157');
                         while ($row = mysqli_fetch_array($q)) {
                             $s = $row['score'];
-                            echo '<tr style="color:#990000"><td>Overall Score&nbsp;<span class="glyphicon glyphicon-stats" aria-hidden="true"></span></td><td>' . $s . '</td></tr>';
+                            echo '<tr style="color:#990000"><td>Overall Score&nbsp;<i class="bi bi-calendar-check"></i></td><td>' . $s . '</td></tr>';
                         }
                         echo '</table></div>';
                     }
