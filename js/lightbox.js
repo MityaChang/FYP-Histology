@@ -123,3 +123,47 @@ function showSlides2(n) {
     dots2[slideLungsIndex - 1].className += " active2";
     captionText2.innerHTML = dots2[slideLungsIndex - 1].alt;
 }
+
+
+/* Organ - Liver JavaScript */
+function openLiverModal() {
+    document.getElementById("liverModal").style.display = "block";
+}
+
+function closeLiverModal() {
+    document.getElementById("liverModal").style.display = "none";
+}
+
+var slideLiverIndex = 1;
+showSlides3(slideLiverIndex);
+
+function plusSlides3(n) {
+    showSlides3(slideLiverIndex += n);
+}
+
+function currentSlide3(n) {
+    showSlides3(slideLiverIndex = n);
+}
+
+function showSlides3(n) {
+    var i;
+    var slides3 = document.getElementsByClassName("liverSlides");
+    var dots3 = document.getElementsByClassName("demo3");
+    var captionText3 = document.getElementById("caption3");
+    if (n > slides3.length) {
+        slideLiverIndex = 1;
+    }
+    if (n < 1) {
+        slideLiverIndex = slides3.length;
+    }
+    for (i = 0; i < slides3.length; i++) {
+        slides3[i].style.display = "none";
+    }
+    for (i = 0; i < dots3.length; i++) {
+        dots3[i].className = dots3[i].className.replace(" active3", "");
+    }
+    slides3[slideLiverIndex - 1].style.display = "block";
+    dots3[slideLiverIndex - 1].className += " active3";
+    captionText3.innerHTML = dots3[slideLiverIndex - 1].alt;
+}
+

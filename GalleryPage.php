@@ -76,7 +76,7 @@
                             <td>
                                 <br>Liver is one of the largest organ in the body and it helps to detoxifies chemicals and metabolizes drugs.<br>
                                 <br>Click on the image to find out more about how the liver looks like under the microscope!</td>
-                            <td><img src="" style="width:100%" onclick="openLungsModal();currentSlide2(1)" class="hover-shadow cursor"></td>
+                            <td><img src="img/liver/f1-liver-thumbnail.png" style="width:100%" onclick="openLiverModal();currentSlide3(1)" class="hover-shadow cursor"></td>
                         </tr>
                         <tr>
                             <td><b>Kidney</b></td>
@@ -97,7 +97,7 @@
 
                         <div class="mySlides">
                             <div class="numbertext">1 / 10</div>
-                            <img src="img/skeletal-muscle/1M15_0.7x.jpg" style="width:100%;">
+                            <img src="img/liver/f1-liver.png" style="width:100%;">
                         </div>
 
                         <div class="mySlides">
@@ -279,10 +279,9 @@
 
 
                
-                <div class="col-12" >                   
-                    </div>
+               
+                    <!------------------------------------------ Start of Lungs Modal box -------------------------------------------------------------->
 
-                    <!------------------------------------------ End of Heart Light box -------------------------------------------------------------->
                     <div id="lungsModal" class="modal">
                         <span class="close cursor" onclick="closeLungsModal()">&times;</span>
                         <div class="modal-content">
@@ -343,9 +342,73 @@
                             <img class="demo2 cursor" src="img/lungs/f4-lungs4.png" style="width:95%" onclick="currentSlide2(6)" alt="Figure 4: Lung tissue stained with PAS stain.">
                         </div>
                     </div>   
-                    <!---------------------------------------------- End of Lungs Modal ------------------------------------------------------------->
+                    <!---------------------------------------------- End of Lungs Box ------------------------------------------------------------->
                 </div>        
-                <!---------------------------------------------- End of Lungs Box ------------------------------------------------------------->
+                
+                 <!---------------------------------------------- Start of Liver Box ------------------------------------------------------------->
+                 <div id="liverModal" class="modal">
+                        <span class="close cursor" onclick="closeLiverModal()">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="liverSlides">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="img/liver/liver.png" style="width:100%">
+                            </div>
+
+                            <div class="liverSlides">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="img/liver/special-stains.png" style="width:100%">
+                            </div>
+
+                            <div class="liverSlides">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="img/liver/f1-liver.png" style="width:100%">
+                            </div>
+
+                            <div class="liverSlides">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="img/liver/f2-liver.png" style="width:100%">
+                            </div>
+                            <div class="liverSlides">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="img/lungs/f3-lungs3.png" style="width:100%">
+                            </div>
+                            <div class="liverSlides">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="img/lungs/f4-lungs4.png" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="caption3"></p>
+                            </div>
+
+                        </div>
+                        <div class="column1">
+                            <img class="demo3 cursor" src="img/liver/liver.png" style="width:95%" onclick="currentSlide3(1)" alt="Slide on Normal Lung">
+                        </div>
+                        <div class="column1">
+                            <img class="demo3 cursor" src="img/lungs/stains.png" style="width:95%" onclick="currentSlide3(2)" alt="Slide on Stains">
+
+                        </div>
+                        <div class="column1">
+                            <img class="demo3 cursor" src="img/liver/f1-liver.png" style="width:95%" onclick="currentSlide3(3)" alt="Figure 1: Lung tissue stained with H&E stain.">
+                        </div>
+                        <div class="column1">
+                            <img class="demo3 cursor" src="img/liver/f2-liver.png" style="width:95%" onclick="currentSlide3(4)" alt="Figure 2: Lung tissue stained with MT stain.">
+                        </div>
+                        <div class="column1">
+                            <img class="demo3 cursor" src="img/lungs/f3-lungs3.png" style="width:95%" onclick="currentSlide3(5)" alt="Figure 3: Lung tissue stained with Reticulin stain.">
+                        </div>
+                        <div class="column1">
+                            <img class="demo3 cursor" src="img/lungs/f4-lungs4.png" style="width:95%" onclick="currentSlide3(6)" alt="Figure 4: Lung tissue stained with PAS stain.">
+                        </div>
+                    </div>   
+                    <!---------------------------------------------- End of Liver Modal ------------------------------------------------------------->
+                </div>
+          <!---------------------------------------------- End of Liver Box ------------------------------------------------------------->
             </div>
             <!------------------------------------------------------- End of Container ------------------------------------------------------------->
     </body>
