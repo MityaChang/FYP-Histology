@@ -42,16 +42,16 @@ function pwdMatch($pass, $passwordRepeat) {
 
 function uidExists($link, $name, $email) {
     $sql = "SELECT * FROM users WHERE userName  = ? OR userEmail  = ?;";
-//    $stmt = mysqli_stmt_init($link);
-    if (!mysqli_stmt_prepare($link, $sql)) {
+    $stmt = mysqli_stmt_init($link);
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("Location: HomePage.php?error=stmtfailed");
         exit();
     }
+    echo mysqli_stmt_prepare($stmt, $sql);
+    mysqli_stmt_bind_param($stmt, "ss", $name, $email);
+    mysqli_stmt_execute($stmt);
 
-    mysqli_stmt_bind_param($link, "ss", $name, $email);
-    mysqli_stmt_execute($link);
-
-    $resultData = mysqli_stmt_get_result($link);
+    $resultData = mysqli_stmt_get_result($stmt);
 
     if ($row = mysqli_fetch_assoc($resultData)) {
         return $row;
@@ -60,7 +60,7 @@ function uidExists($link, $name, $email) {
         return $result;
     }
 
-    mysqli_stmt_close($link);
+    mysqli_stmt_close($stmt);
 }
 
 function createUser($link, $email, $name, $pass) {
@@ -109,7 +109,7 @@ function loginUser($link, $username, $pass) {
         exit();
     }
 }
-    
+
 //    $query = "select * from users where users where userName = '$username' and userPass = '".password_hash($pass, PASSWORD_DEFAULT)."'";
 //    $result = mysqli_query($link, $query);
 //    if (empty($result)) {
@@ -122,5 +122,4 @@ function loginUser($link, $username, $pass) {
 //        } 
 //    }
 //}
-
 ?>
