@@ -8,7 +8,7 @@
 //        die(mysqli_connect_error());
 
 $connectstr_dbhost = '';
-$connectstr_dbname = 'fyphistology';
+$connectstr_dbname = '';
 $connectstr_dbusername = '';
 $connectstr_dbpassword = '';
 
