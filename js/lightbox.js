@@ -167,3 +167,44 @@ function showSlides3(n) {
     captionText3.innerHTML = dots3[slideLiverIndex - 1].alt;
 }
 
+/* Organ - Kidney JavaScript */
+function openKidneyModal() {
+    document.getElementById("kidneyModal").style.display = "block";
+}
+
+function closeKidneyModal() {
+    document.getElementById("kidneyModal").style.display = "none";
+}
+
+var slideKidneyIndex = 1;
+showSlides4(slideKidneyIndex);
+
+function plusSlides4(n) {
+    showSlides4(slideKidneyIndex += n);
+}
+
+function currentSlide4(n) {
+    showSlides4(slideKidneyIndex = n);
+}
+
+function showSlides4(n) {
+    var i;
+    var slides4 = document.getElementsByClassName("kidneySlides");
+    var dots4 = document.getElementsByClassName("demo4");
+    var captionText4 = document.getElementById("caption4");
+    if (n > slides4.length) {
+        slideKidneyIndex = 1;
+    }
+    if (n < 1) {
+        slideKidneyIndex = slides4.length;
+    }
+    for (i = 0; i < slides4.length; i++) {
+        slides4[i].style.display = "none";
+    }
+    for (i = 0; i < dots4.length; i++) {
+        dots4[i].className = dots4[i].className.replace(" active4", "");
+    }
+    slides4[slideKidneyIndex - 1].style.display = "block";
+    dots4[slideKidneyIndex - 1].className += " active4";
+    captionText4.innerHTML = dots4[slideKidneyIndex - 1].alt;
+}

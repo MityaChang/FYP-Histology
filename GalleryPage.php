@@ -83,7 +83,7 @@
                             <td>
                                 <br>Without your kidney, your body would be filled with waste.<br>
                                 <br>Give our kidneys some appreciation and let's look at what makes it up under the microscope!</td>
-                            <td><img src="" style="width:100%" onclick="openLungsModal();currentSlide2(1)" class="hover-shadow cursor"></td>
+                            <td><img src="img/kidney/f1-kidney-thumbnail.png" style="width:100%" onclick="openKidneyModal();currentSlide4(1)" class="hover-shadow cursor"></td>
                         </tr>
                     </table>
 
@@ -371,11 +371,11 @@
                             </div>
                             <div class="liverSlides">
                                 <div class="numbertext">5 / 6</div>
-                                <img src="img/lungs/f3-lungs3.png" style="width:100%">
+                                <img src="img/liver/f3-liver.png" style="width:100%">
                             </div>
                             <div class="liverSlides">
                                 <div class="numbertext">6 / 6</div>
-                                <img src="img/lungs/f4-lungs4.png" style="width:100%">
+                                <img src="img/liver/f4-liver.png" style="width:100%">
                             </div>
 
                             <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
@@ -390,20 +390,84 @@
                             <img class="demo3 cursor" src="img/liver/liver.png" style="width:95%" onclick="currentSlide3(1)" alt="Slide on Normal Lung">
                         </div>
                         <div class="column1">
-                            <img class="demo3 cursor" src="img/lungs/stains.png" style="width:95%" onclick="currentSlide3(2)" alt="Slide on Stains">
+                            <img class="demo3 cursor" src="img/liver/special-stains.png" style="width:95%" onclick="currentSlide3(2)" alt="Slide on Stains">
 
                         </div>
                         <div class="column1">
-                            <img class="demo3 cursor" src="img/liver/f1-liver.png" style="width:95%" onclick="currentSlide3(3)" alt="Figure 1: Lung tissue stained with H&E stain.">
+                            <img class="demo3 cursor" src="img/liver/f1-liver.png" style="width:95%" onclick="currentSlide3(3)" alt="Figure 1. Liver stained with H&E stain.">
                         </div>
                         <div class="column1">
-                            <img class="demo3 cursor" src="img/liver/f2-liver.png" style="width:95%" onclick="currentSlide3(4)" alt="Figure 2: Lung tissue stained with MT stain.">
+                            <img class="demo3 cursor" src="img/liver/f2-liver.png" style="width:95%" onclick="currentSlide3(4)" alt="Figure 2. Liver stained with MT stain.">
                         </div>
                         <div class="column1">
-                            <img class="demo3 cursor" src="img/lungs/f3-lungs3.png" style="width:95%" onclick="currentSlide3(5)" alt="Figure 3: Lung tissue stained with Reticulin stain.">
+                            <img class="demo3 cursor" src="img/liver/f3-liver.png" style="width:95%" onclick="currentSlide3(5)" alt="Figure 3. Liver stained with reticulin stain.">
                         </div>
                         <div class="column1">
-                            <img class="demo3 cursor" src="img/lungs/f4-lungs4.png" style="width:95%" onclick="currentSlide3(6)" alt="Figure 4: Lung tissue stained with PAS stain.">
+                            <img class="demo3 cursor" src="img/liver/f4-liver.png" style="width:95%" onclick="currentSlide3(6)" alt="Figure 4. Liver stained with PAS stain.">
+                        </div>
+                    </div>   
+                    <!---------------------------------------------- End of Liver Modal ------------------------------------------------------------->
+                </div>
+          <!---------------------------------------------- End of Liver Box ------------------------------------------------------------->
+          
+          <!---------------------------------------------- Start of Kidney Box ------------------------------------------------------------->
+                 <div id="kidneyModal" class="modal">
+                        <span class="close cursor" onclick="closeKidneyModal()">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="kidneySlides">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="img/kidney/normal-kidney.png" style="width:100%">
+                            </div>
+
+                            <div class="kidneySlides">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="img/kidney/kidney-stains.png" style="width:100%">
+                            </div>
+
+                            <div class="kidneySlides">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="img/kidney/f1-kidney.png" style="width:100%">
+                            </div>
+
+                            <div class="kidneySlides">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="img/kidney/f2-kidney.png" style="width:100%">
+                            </div>
+                            <div class="kidneySlides">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="img/kidney/f3-kidney.png" style="width:100%">
+                            </div>
+                            <div class="kidneySlides">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="img/kidney/f4-kidney.png" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="caption4"></p>
+                            </div>
+
+                        </div>
+                        <div class="column1">
+                            <img class="demo4 cursor" src="img/kidney/normal-kidney.png" style="width:95%" onclick="currentSlide4(1)" alt="Slide on Normal Lung">
+                        </div>
+                        <div class="column1">
+                            <img class="demo4 cursor" src="img/kidney/kidney-stains.png" style="width:95%" onclick="currentSlide4(2)" alt="Slide on Stains">
+                        </div>
+                        <div class="column1">
+                            <img class="demo4 cursor" src="img/kidney/f1-kidney.png" style="width:95%" onclick="currentSlide4(3)" alt="Figure 1. Liver stained with H&E stain.">
+                        </div>
+                        <div class="column1">
+                            <img class="demo4 cursor" src="img/kidney/f2-kidney.png" style="width:95%" onclick="currentSlide4(4)" alt="Figure 2. Liver stained with MT stain.">
+                        </div>
+                        <div class="column1">
+                            <img class="demo4 cursor" src="img/kidney/f3-kidney.png" style="width:95%" onclick="currentSlide4(5)" alt="Figure 3. Liver stained with reticulin stain.">
+                        </div>
+                        <div class="column1">
+                            <img class="demo4 cursor" src="img/kidney/f4-kidney.png" style="width:95%" onclick="currentSlide4(6)" alt="Figure 4. Liver stained with PAS stain.">
                         </div>
                     </div>   
                     <!---------------------------------------------- End of Liver Modal ------------------------------------------------------------->
