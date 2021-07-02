@@ -68,7 +68,7 @@
                             A list of fill in the blanks questions about Histology
                             <br/>
                             <br/>
-                            <a href="#" class="btn btn-info">Start</a>
+                            <a href="IntermediateQuizPage.php" class="btn btn-info">Start</a>
                         </div>
 
                     </div>
@@ -81,6 +81,17 @@
                             <br/>
                             <a href="#" class="btn btn-info">Start</a>
                         </div>
+                    </div>
+                                        <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
+                        <h2 class="h2-diffuclty" style="color:#c694e0">Testing</h2>
+                       <div class="card-header" style="color: #c694e0">Fill in the blanks</div>
+                        <div class="card-body" style="color: #33ac04;">
+                            A list of testing in the blanks questions about Histology
+                            <br/>
+                            <br/>
+                            <a href="QuizPage_FillInBlank.php" class="btn btn-info">Start</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
