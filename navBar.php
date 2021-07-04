@@ -5,7 +5,6 @@ if (!(isset($_SESSION['email']))) {
     header("location:login.php");
 } else {
     $email = $_SESSION['email'];
-    $name = $_SESSION['userEmail'];
     include_once 'dbFunctions.php';
 }
 ?>

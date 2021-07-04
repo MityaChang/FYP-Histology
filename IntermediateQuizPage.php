@@ -103,6 +103,19 @@
             }
         </style>
         <script>
+            $(document).ready(function () {
+                $('.image').hover(function () {
+                    $(this).css('width', function (_, cur) {
+                        return cur === '75%' ? '100%' : '75%'
+                    });
+                });
+            });
+//            // Function to increase image size
+//            function enlargeImg(img) {
+//                img.style.transform = "scale(1.5)";
+//                img.style.transition =
+//                        "transform 0.25s ease";
+//            }
             function allowDrop(ev) {
                 ev.preventDefault();
             }
@@ -113,7 +126,7 @@
             }
 
             function drop(ev) {
-                
+
                 ev.preventDefault();
                 var data = ev.dataTransfer.getData("text");
                 ev.target.appendChild(document.getElementById(data));
@@ -152,8 +165,10 @@
                                 <br/>
                                 <h3 class="questionText" >&nbsp; 1. Figure 1 and 2 shows H&E stained kidney sections.</h3>
                                 <br/>
-                                <img src="img/Question1Fig1.png" alt="">&nbsp; </img>
-                                <img src="img/Question1Fig2.png" alt=""/>
+                                <div id="rightImage">
+                                    <img src="img/Question1Fig1.png" alt="" class="image">&nbsp; </img>
+                                    <img src="img/Question1Fig2.png" alt="" class="image"/>
+                                </div>
                                 <br/><br/>
                                 <h3 >&nbsp;1. Identify the structure circled in Figure1 and Figure 2.</h3>
                                 <label for="Q1Figure1">Figure 1:&nbsp; </label>
@@ -227,12 +242,12 @@
                                 <br/><br/>
                                 <h3>1. Drag and Drop the correct stains to the images.</h3>
                                 <p style="font-size: 12; color: gray">To change answer please drag out your answer then drag in a new answer</p>
-                                    <div  class="container4" style="width: 80%" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                        <div class="row">
-                                    <div  class="dragText" id="drag1" draggable="true" ondragstart="drag(event)" width="336" height="69">H&E stain&nbsp;   </div>
-                                    <div  class="dragText" id="drag2" draggable="true" ondragstart="drag(event)" width="336" height="69">Reticulin stain&nbsp;   </div>                       
-                                    <div  class="dragText" id="drag3" draggable="true" ondragstart="drag(event)" width="336" height="69">PAS stain&nbsp;    </div>
-                                    <div  class="dragText" id="drag4" draggable="true" ondragstart="drag(event)" width="336" height="69">Masson's Trichrome stain&nbsp;   </div>
+                                <div  class="container4" style="width: 80%" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <div class="row">
+                                        <div  class="dragText" id="drag1" draggable="true" ondragstart="drag(event)" width="336" height="69">H&E stain&nbsp;   </div>
+                                        <div  class="dragText" id="drag2" draggable="true" ondragstart="drag(event)" width="336" height="69">Reticulin stain&nbsp;   </div>                       
+                                        <div  class="dragText" id="drag3" draggable="true" ondragstart="drag(event)" width="336" height="69">PAS stain&nbsp;    </div>
+                                        <div  class="dragText" id="drag4" draggable="true" ondragstart="drag(event)" width="336" height="69">Masson's Trichrome stain&nbsp;   </div>
                                     </div>
                                 </div>
                             </div>
