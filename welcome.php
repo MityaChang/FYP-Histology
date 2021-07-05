@@ -28,9 +28,7 @@ if (!(isset($_SESSION['email']))) {
         .navbar-custom{
             background-color: #000000
         }
-        #textColor{
-            color: white;
-        }
+   
 
     </style>
     <body>
@@ -50,13 +48,14 @@ if (!(isset($_SESSION['email']))) {
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-left">
-                        <li <?php if (@$_GET['q'] == 1) echo'class="active"'; ?> ><a href="welcome.php?q=1" id="textColor"><i class="bi bi-house-door-fill"></i>&nbsp;Home<span class="sr-only">(current)</span></a></li>
-                        <li <?php if (@$_GET['q'] == 2) echo'class="active"'; ?>> <a href="welcome.php?q=2" id="textColor"><i class="bi bi-book"></i>&nbsp;History</a></li>
-                        <li <?php if (@$_GET['q'] == 3) echo'class="active"'; ?>> <a href="welcome.php?q=3" id="textColor"><i class="bi bi-bar-chart-line-fill"></i>&nbsp;Ranking</a></li>
+                                                 <!-- this echo ask qikai if needed -->
+                        <li <?php if (@$_GET['q'] == 1) echo'class="active"'; ?> class="nav-item active"> <a href="welcome.php?q=1" id="textColor" class="nav-link"><i class="bi bi-house-door-fill"></i>&nbsp;Home</a></li>
+                        <li <?php if (@$_GET['q'] == 2) echo'class="active"'; ?> class="nav-item"> <a href="welcome.php?q=2" id="textColor" class="nav-link"><i class="bi bi-book"></i>&nbsp;History</a></li>
+                        <li <?php if (@$_GET['q'] == 3) echo'class="active"'; ?>  class="nav-item"> <a href="welcome.php?q=3" id="textColor" class="nav-link"><i class="bi bi-bar-chart-line-fill"></i>&nbsp;Ranking</a></li>
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li <?php echo''; ?> > <a href="QuizHomePage.php" id="textColor"><i class="bi bi-box-arrow-right"></i>&nbsp;Back to Main Page</a></li>
+                        <li <?php echo''; ?>  class="nav-item"> <a href="QuizHomePage.php" id="textColor" class="nav-link"><i class="bi bi-box-arrow-right"></i>&nbsp;Back to Main Page</a></li>
                     </ul>
 
 
@@ -65,7 +64,7 @@ if (!(isset($_SESSION['email']))) {
                 </div>
             </div>
         </nav>
-        <br><br>    0.
+        <br><br>    
         <div class="container">
             <div class="row">
                 <div class="col-12">
