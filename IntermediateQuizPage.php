@@ -101,21 +101,16 @@
                 height:80px;
                 cursor: pointer;
             }
+            .image {
+                transition:transform 0.25s ease;
+            }
+
+            .image:hover {
+                -webkit-transform:scale(2); /* or some other value */
+                transform:scale(2);
+            }
         </style>
         <script>
-            $(document).ready(function () {
-                $('.image').hover(function () {
-                    $(this).css('width', function (_, cur) {
-                        return cur === '75%' ? '100%' : '75%'
-                    });
-                });
-            });
-//            // Function to increase image size
-//            function enlargeImg(img) {
-//                img.style.transform = "scale(1.5)";
-//                img.style.transition =
-//                        "transform 0.25s ease";
-//            }
             function allowDrop(ev) {
                 ev.preventDefault();
             }
@@ -192,7 +187,7 @@
                                 <br/>
                                 <h3 class="questionText" >&nbsp; 2. Figure 1 show histological slide of a kidney specimen.</h3>
                                 <br/>
-                                <img src="img/kidney-specimen-better-quality.png" alt=""/>
+                                <img src="img/kidney-specimen-better-quality.png" alt="" class="image"/>
                                 <br/><br/>
                                 <label for="Q2Figure1">1. Black specks present in Figure 1 are usually</label>
                                 <input type="text" id="Q2Figure1" name="Q2Figure1"><br>
@@ -206,7 +201,7 @@
                                 <br/>
                                 <h3 class="questionText" >&nbsp; 3. Identify the four layers of the small intestine.</h3>
                                 <br/>
-                                <img src="img/small-intestine.png" alt=""/>
+                                <img src="img/small-intestine.png" alt="" class="image"/>
                                 <br/><br/>
                                 <h3>3. Identify the four layers of the small intestine.</h3>
                                 <label for="Q3LabelA">Label A:&nbsp; </label>
@@ -232,8 +227,8 @@
                                 <br/>
                                 <h3 class="questionText" >&nbsp; 2. Figure 1 and Figure 2 shows microscopic view of testes.</h3>
                                 <br/>
-                                <img style='margin-left: 20px' src="img/f1-sectionb.png" alt=""/>
-                                <img style='margin-left: 20px' src="img/f2-sectionb.png" alt=""/>
+                                <img style='margin-left: 20px' src="img/f1-sectionb.png" alt="" class="image"/>
+                                <img style='margin-left: 20px' src="img/f2-sectionb.png" alt="" class="image"/>
                                 <br/><br/>
                                 <div class="row">
                                     <div class="testdiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
