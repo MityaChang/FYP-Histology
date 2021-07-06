@@ -47,6 +47,18 @@
                     <input type="text" id="login" class="fadeIn second" name="login" placeholder="username/email" >
                     <input type="password" id="password" class="fadeIn second" name="password" placeholder="password" >
                     <input type="submit" name="submit" class="fadeIn fourth" value="Log In">
+                    <h5>OR</h5>
+                    <div id="formFooter">
+                        <a href="https://www.facebook.com/" class="fb btn">
+                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                        </a>
+                        <a href="https://twitter.com/" class="twitter btn">
+                            <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                        </a>
+                        <a href="https://myaccount.google.com/intro/profile?pli=1" class="google btn"><i class="fa fa-google fa-fw">
+                            </i> Login with Google+
+                        </a>
+                    </div>
                 </form>
 
                 <!-- Remind Passowrd -->
