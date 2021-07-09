@@ -19,9 +19,9 @@
             body{
                 width: 100%;
                 background-image: url("./img/loginBgImage.png");
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
+                 -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
                 background-size: cover;
             }
         </style>
