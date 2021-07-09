@@ -36,12 +36,12 @@
         include("navBar.php");
         ?>
         <!-- End of Navigation Bar -->
-
+        
         <!----------------------------------------------------- Container ------------------------------------------------------------------------->
 
         <div class="container col-12" style="margin-top: 75px;">
             <div class="col-12">
-                <h1 class="h1-histology">Slides</h1>
+                <h1 class="h1-histology"><b>Slides</b></h1>
                 <div class="row">
 
                     <!----------------------------------------------------- Table ------------------------------------------------------------------------->
@@ -465,22 +465,22 @@
 
             </div>
             <div class="column1">
-                <img class="demo4 cursor" src="img/kidney/normal-kidney.png" style="width:95%" onclick="currentSlide4(1)" alt="Slide on Normal Lung">
+                <img class="demo4 cursor" src="img/kidney/normal-kidney.png" style="width:95%" onclick="currentSlide4(1)" alt="Slide on Normal Kidney">
             </div>
             <div class="column1">
                 <img class="demo4 cursor" src="img/kidney/kidney-stains.png" style="width:95%" onclick="currentSlide4(2)" alt="Slide on Stains">
             </div>
             <div class="column1">
-                <img class="demo4 cursor" src="img/kidney/f1-kidney.png" style="width:95%" onclick="currentSlide4(3)" alt="Figure 1. Liver stained with H&E stain.">
+                <img class="demo4 cursor" src="img/kidney/f1-kidney.png" style="width:95%" onclick="currentSlide4(3)" alt="Figure 1. Kidney stained with H&E stain.">
             </div>
             <div class="column1">
-                <img class="demo4 cursor" src="img/kidney/f2-kidney.png" style="width:95%" onclick="currentSlide4(4)" alt="Figure 2. Liver stained with MT stain.">
+                <img class="demo4 cursor" src="img/kidney/f2-kidney.png" style="width:95%" onclick="currentSlide4(4)" alt="Figure 2. Kidney stained with MT stain.">
             </div>
             <div class="column1">
-                <img class="demo4 cursor" src="img/kidney/f3-kidney.png" style="width:95%" onclick="currentSlide4(5)" alt="Figure 3. Liver stained with reticulin stain.">
+                <img class="demo4 cursor" src="img/kidney/f3-kidney.png" style="width:95%" onclick="currentSlide4(5)" alt="Figure 3. Kidney stained with reticulin stain.">
             </div>
             <div class="column1">
-                <img class="demo4 cursor" src="img/kidney/f4-kidney.png" style="width:95%" onclick="currentSlide4(6)" alt="Figure 4. Liver stained with PAS stain.">
+                <img class="demo4 cursor" src="img/kidney/f4-kidney.png" style="width:95%" onclick="currentSlide4(6)" alt="Figure 4. Kidney stained with PAS stain.">
             </div>
         </div>   
         <!---------------------------------------------- End of Liver Modal ------------------------------------------------------------->

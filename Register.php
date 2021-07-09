@@ -3,7 +3,7 @@
     <head>
         <title>Register</title>
         <meta charset="UTF-8">
-        <title></title>
+
         <?php include 'extension.html' ?>
         <script type="text/javascript" src="./js/signup.js"></script>
         <link rel="stylesheet" href="./css/signup.css">

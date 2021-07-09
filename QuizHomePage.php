@@ -37,12 +37,13 @@
         include("navBar.php");
         ?>
         <!-- End of Navigation Bar -->
-        <br/><br/><br/><br/>
+        <br><br><br>
 
 
         <!--middle container -->
-          <h1 class="h1-histology"> Quiz</h1>
-        <div class="container col-12">
+        <h1 class="h1-histology"><b>Quiz</b></h1>
+        <div class="container col-12" style="margin-top: 75px;">
+            
 
           
           
