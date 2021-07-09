@@ -9,12 +9,12 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <style>
-            body{
-                background: url('./img/BgMainPage.png') no-repeat center center fixed; 
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
+           body{
+               background-image: linear-gradient(to bottom right, #F5DFE9, #FDD9EA);
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
             }
             #navigation{
                 background-image: url("./img/banner-SAS.jpg");

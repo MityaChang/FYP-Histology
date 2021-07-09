@@ -10,25 +10,7 @@ and open the template in the editor.
 
 /* ------------------------------------ */
 /* header CSS */
-.h1-histology {
-    font-size: 70px;
-    text-align: center;
-    text-shadow: 1px 1px 1px black,
-        3px 2px 3px black;
-    color: #c694e0;
-}
-.h1-summary {
 
-    text-shadow: 1px 1px 1px black,
-        3px 2px 3px black;
-    color: #818182;
-}
-
-h5 {
-    color: #33ac04;
-    text-shadow: 1px 1px 1px black,
-        2px 1px 2px black;
-}
 /* ------------------------------------ */
 /* Body CSS */
 body {
@@ -78,9 +60,9 @@ body {
 /* ------------------------------------ */
 /* Container CSS */
 .container{ 
-    max-width: 63%;
+    max-width: 70%;
     height: auto;
-    background-color: #EAE9EA;
+    
 
 }
 

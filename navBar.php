@@ -11,7 +11,7 @@ if (!(isset($_SESSION['email']))) {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-cus" id="navigation">
     <a class="navbar-brand" href="#">
-        <img class="rplogo" src="img/RP-Logo.png" alt=""/>
+
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
     </button>

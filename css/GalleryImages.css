@@ -152,21 +152,23 @@ img.hover-shadow {
 
 table {
     font-family: arial, sans-serif;
-    border-collapse: collapse;
+    border-collapse: initial;
     width: 100%;
     table-layout: fixed;
+    border: 2px solid black;
 
 }
 
 td, th {
-    border: 1px solid black;
+    border: 2px solid black;
     text-align: left;
     padding: 8px;
+ }
 
+th {
+    background-color: #F77EAF;
+    font-size: 25px;
 }
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-
-
+.description {
+    background-color: #E8CBF7;
 }

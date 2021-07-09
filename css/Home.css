@@ -11,22 +11,20 @@ and open the template in the editor.
 /* ------------------------------------ */
 /* header CSS */
 .h1-histology {
-    font-size: 52px;
+    font-size: 80px;
     text-align: center;
     text-shadow: 2px 2px 2px black,
-        4px 3px 4px black;
+        3px 2px 3px black;
     color: #c694e0;
 }
 .h1-summary {
     font-size: 32px;
-    text-shadow: 1px 1px 1px black,
-        3px 2px 3px black;
+   
     color: #818182;
 }
 .easy-header {
     font-size: 42px;
-    text-shadow: 2px 2px 2px black,
-        4px 3px 4px black;
+  
     color: #b1dfbb;
 }
 
@@ -39,9 +37,8 @@ h3 {
 }
 
 h5 {
-    color: #33ac04;
-    text-shadow: 1px 1px 1px black,
-        2px 1px 2px black;
+    
+ 
 }
 /* ------------------------------------ */
 /* Body CSS */
@@ -68,7 +65,7 @@ body {
     position: fixed;  /*Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%;  /* Full width */
-    height: auto;
+    height: 60px;
     z-index: 1;
 }
 .navbar-cus {
@@ -92,9 +89,9 @@ body {
 /* ------------------------------------ */
 /* Container CSS */
 .container{ 
-    max-width: 63%;
+   
     height: auto;
-    background-color: #EAE9EA;
+   
 }
 
 

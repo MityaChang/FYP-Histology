@@ -10,7 +10,7 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <style>
             body{
-                background: url('./img/BgMainPage.png') no-repeat center center fixed; 
+               background-image: linear-gradient(to bottom right, #F5DFE9, #FDD9EA);
                     -webkit-background-size: cover;
                     -moz-background-size: cover;
                     -o-background-size: cover;
@@ -41,49 +41,63 @@
         include("navBar.php");
         ?>
         <!-- End of Navigation Bar -->
-        <br/><br/><br/><br/>
-
-
         <!--middle container -->
-        <div class="container">
-            <div class="col-12" >
-                <h1 class="h1-histology">Histology</h1>
-                <div class="row ">
+        <div class="container col-12" style="margin-top: 75px;">
+            <h1 class="h1-histology"><b>Histology</b></h1>
+
+                   <div class="row" style="margin-left: 25px">
                     <div class=" card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
                         <div class="card-body">
                             <img src="img/skeletal-muscle/1M18_0.5x.jpg" class ="round-circle" id="cardImage" alt=""/>
                             <div class="overlay">
-                                <div class="text">Hello World</div>
+                                <div class="text">Skeletal Muscle</div>
                             </div>
 
                         </div>
                     </div>
                     <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
-                        <img src="img/skeletal-muscle/1M23_0.9x.jpg" class ="round-circle" id="cardImage" alt=""/>
+                        <img src="img/kidney/f1-kidney-thumbnail.png" class ="round-circle" id="cardImage" alt=""/>
                         <div class="overlay">
-                            <div class="text">Hello World2</div>
+                            <div class="text">Kidney</div>
                         </div>
 
                     </div>
 
                     <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
-                        <img src="img/skeletal-muscle/1M24_0.7x.jpg" class ="round-circle" id="cardImage" alt=""/>
+                        <img src="img/liver/f1-liver-thumbnail.png" class ="round-circle" id="cardImage" alt=""/>
                         <div class="overlay">
-                            <div class="text">Hello World3</div>
+                            <div class="text">Liver</div>
+                        </div>
+                    </div>
+                       <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
+                           <img src="img/heart/organ4heart.jpg" class ="round-circle" id="cardImage" alt=""/>
+                        <div class="overlay">
+                            <div class="text">Heart</div>
+                        </div>
+                    </div>
+                       <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
+                           <img src="img/lungs/f1-lungs1-thumbnail.png" class ="round-circle" id="cardImage" alt=""/>
+                        <div class="overlay">
+                            <div class="text">Lungs</div>
                         </div>
                     </div>
                 </div>
-                <h1 class="h1-summary"> Summary</h1>
+            <br>
+                <h1 class="h1-summary">Learning Histology with us!</h1>
                 <hr>
-                <h3>Histology is the microscopic anatomy and academics and also the medical field would benefit from a a web application of the histology images of organs.</h3>
+                <h3>Learning histology can be fun!</h3>
                 <hr>
-                <h4>By the end of this session, you will acquire the skills and knowledge to...</h4><br>
-                <h5>&#10004; Identify organs based on the images shown. </h5>
-                <h5>&#10004; Understand the arrangement of cells and tissues in a normal organ system. </h5>
-                <br/><br/><br/><br/><br/><br/>
+                <h3>Welcome! Follow along and you will have a tons of fun as you navigate through!</h3>
+                 <hr>
+                
+                <h3>You may monitor your progress as you discover and learn some of the important structures of our organs that perform crucial functions for us every day.</h3>
+                
+                <h3>In this application, you will find interesting learning materials, and interactive quizzes that will help you enhance your knowledge of histology! </h3>
+                <br>
+                <h3>Enjoy your journey ahead! </h3>
                 <hr>
-            </div>
-        </div>
+
+
 
 
         <!-- End of Container -->

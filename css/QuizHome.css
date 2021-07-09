@@ -82,9 +82,11 @@ body {
 /* ------------------------------------ */
 /* Container CSS */
 .container{ 
-    max-width: 63%;
+    display: flex;
+    justify-content: center;
     height: auto;
-    background-color: #EAE9EA;
+    flex-direction: row;
+   
 }
 
 .h2-diffuclty{
