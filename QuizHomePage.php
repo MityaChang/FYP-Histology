@@ -27,11 +27,7 @@
                 /*Without this, clicking will make it sticky*/
                 pointer-events: none;
             }
-            #navBarlogo {
-                width: 250px;
-                height:80px;
-                cursor: pointer;
-            }
+           
         </style>
         <link href="css/QuizHome.css" rel="stylesheet" type="text/css"/>
         <link href="css/navbar.css" rel="stylesheet" type="text/css"/>
