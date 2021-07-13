@@ -1,18 +1,3 @@
-<table border="1" width="100%">
-
-
-  <tr>
-    <td>Skeletal Muscle</td>
-    <td>Description</td>
-    
-    <td rowspan="3">IMAGE 2</td>
-  </tr>
-
-      <td rowspan="2">name</td>
-
-
-    <td>Lungs are important organ that helps with gaseous exchange. 
-                                <br>Have you ever wonder how does it looks like under microscope?<br>
-                                <br>Click on the image to find out more!</td>
-  
-</table>
+<td><center><b><a href="update.php?q=rmquiz&eid=' . $eid . '" class="pull-right btn sub1" style="margin:0px;background:green;color:black"><i class="bi bi-pencil-fill"></i>&nbsp;<span class="title1"><b>Update</b></span></a></b></center></td></tr>
+      <td><center><b><a href="update.php?q=rmquiz&eid=' . $eid . '" class="pull-right btn sub1" style="margin:0px;background:red;color:black"><i class="bi bi-trash-fill"></i>&nbsp;<span class="title1"><b>Remove</b></span></a></b></center></td></tr>';
+             

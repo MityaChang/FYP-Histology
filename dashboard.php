@@ -43,8 +43,27 @@ if (!(isset($_SESSION['email']))) {
                     <li class="nav-item"><a href="dashboard.php?q=5" class="nav-link">Remove Quiz</a></li>
                 </ul>
                 <ul class="nav navbar-nav ml-auto">
-                    <li <?php echo''; ?> class="nav-item"> <a class="nav-link" href="logout1.php?q=dashboard.php"><i class="bi bi-box-arrow-right"></i>&nbsp;Log out</a></li>
-                </ul>
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            Admin
+                                            <i class="bi bi-caret-down"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(-100px, 21px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                            <button type="button" tabindex="0" class="dropdown-item"><i class="bi bi-person"></i>Admin Account</button>
+                                            <div tabindex="-1" class="dropdown-divider"></div>
+                                             <a class="dropdown-item" href="logout1.php?q=dashboard.php"><i class="bi bi-box-arrow-right"></i>&nbsp;Log out</a></li>
+              
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      </ul>
             </div>
         </nav>
 
@@ -210,13 +229,16 @@ if (!(isset($_SESSION['email']))) {
                             $total = $row['total'];
                             $sahi = $row['sahi'];
                             $eid = $row['eid'];
-                            echo '<tr><td><center>' . $c++ . '</center></td><td><center>' . $title . '</center></td><td><center>' . $total . '</center></td><td><center>' . $sahi * $total . '</center></td>
-                            <td><center><b><a href="update.php?q=rmquiz&eid=' . $eid . '" class="pull-right btn sub1" style="margin:0px;background:red;color:black"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Remove</b></span></a></b></center></td></tr>';
+                            echo '<tr><td><center style="margin-top:30px;font-size: 20px;">' . $c++ . '</center></td><td><center style="margin-top:30px;font-size: 20px;">' . $title . '</center></td><td><center style="margin-top:30px;font-size: 20px;">' . $total . '</center></td><td><center style="margin-top:30px;font-size: 20px;">' . $sahi * $total . '</center></td>
+                                                    
+<td><center><b><a href="update.php?q=rmquiz&eid=' . $eid . '" class="pull-right btn sub1" style="margin:5px;background:green;color:black"><i class="bi bi-pencil-fill"></i>&nbsp;<span class="title1"><b>Update</b></span></a></b></center>
+    <center><b><a href="update.php?q=rmquiz&eid=' . $eid . '" class="pull-right btn sub1" style="margin:5px;background:red;color:black"><i class="bi bi-trash-fill"></i>&nbsp;<span class="title1"><b>Remove</b></span></a></b></center></td>';
                         }
                         $c = 0;
                         echo '</table></div></div>';
                     }
                     ?>
+                    
                 </div>
             </div>
         </div>
