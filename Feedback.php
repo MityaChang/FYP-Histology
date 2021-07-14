@@ -52,25 +52,25 @@
                 <h4>What can we improve on?</h4>
                 <hr>
 
-                <form id="defaultForm" action="#" method="post">
+                <form id="defaultForm" action="doFeedBack.php" method="post">
                     <div class="form-group">
                         <div class="form-group w-25">
                             <h3>Subject:</h3>
-                            <input class="form-control" id="id_subject" type="text" placeholder="E.g Quiz questions" required>
+                            <input class="form-control" id="id_subject" type="text" name="subject" placeholder="E.g Quiz questions" required>
 
                         </div>
                         <div class="form-group w-50">
                             <h3>Name:</h3>
-                            <input class="form-control" id="id_name" type="text" placeholder="E.g Jeff" required>
+                            <input class="form-control" id="id_name" type="text" name="name" placeholder="E.g Jeff" required>
 
                         </div>
                         <div class="form-group w-50">
                             <h3>Email:</h3>
-                            <input class="form-control" id="id_email" type="text" placeholder="E.g 1987567@rp.edu.sg" required>
+                            <input class="form-control" id="id_email" type="text" name="email" placeholder="E.g 1987567@rp.edu.sg" required>
                         </div>
                         <div class="form-group w-75">
                             <h3>Comments:</h3>
-                            <textarea id="id_comments" class="form-control" rows="8"></textarea>
+                            <textarea id="id_comments" class="form-control" name="comments" rows="8" required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-info">Submit</button>
