@@ -26,7 +26,13 @@ if (!(isset($_SESSION['email']))) {
     </head>
     <style>
         .navbar-custom{
-            background-color: #000000
+           background-image: url("./img/banner-SAS.jpg");
+           -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                    
+
         }
    
 
@@ -55,7 +61,7 @@ if (!(isset($_SESSION['email']))) {
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li <?php echo''; ?>  class="nav-item"> <a href="QuizHomePage.php" id="textColor" class="nav-link"><i class="bi bi-box-arrow-right"></i>&nbsp;Back to Main Page</a></li>
+                        <li <?php echo''; ?>  class="nav-item"> <a href="HomePage.php" id="textColor" class="nav-link"><i class="bi bi-box-arrow-right"></i>&nbsp;Back to Main Page</a></li>
                     </ul>
 
 

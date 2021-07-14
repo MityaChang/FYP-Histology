@@ -22,7 +22,7 @@ if (!(isset($_SESSION['email']))) {
     <ul>
         <li><a class="" href="HomePage.php"><i class="bi bi-house-fill"></i>Home</a></li>
         <li><a href="GalleryPage.php"><i class="bi bi-stack"></i>Slides</a></li>
-        <li><a href="QuizHomePage.php"><i class="bi bi-clipboard-check"></i>Quiz</a></li>
+        <li><a href="welcome.php?q=1"><i class="bi bi-clipboard-check"></i>Quiz</a></li>
         <li><a href="Feedback.php"><i class="bi bi-archive-fill"></i>Feedback</a></li>
     </ul>
     

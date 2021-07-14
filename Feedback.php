@@ -10,7 +10,7 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <style>
            body{
-               background-image: linear-gradient(to bottom right, #F5DFE9, #FDD9EA);
+               background-image: url("./img/feedback.png");
                     -webkit-background-size: cover;
                     -moz-background-size: cover;
                     -o-background-size: cover;

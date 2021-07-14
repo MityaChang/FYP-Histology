@@ -15,7 +15,7 @@
         <style>
 
             body{
-                background-image: linear-gradient(to bottom right, #F5DFE9, #FDD9EA);
+                 background-image: url("./img/slide.png");
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;

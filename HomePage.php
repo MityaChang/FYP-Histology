@@ -10,7 +10,7 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <style>
             body{
-               background-image: linear-gradient(to bottom right, #F5DFE9, #FDD9EA);
+              background-image: url("./img/homepage.png");
                     -webkit-background-size: cover;
                     -moz-background-size: cover;
                     -o-background-size: cover;
@@ -83,6 +83,7 @@
                     </div>
                 </div>
             <br>
+            <div class="paragraphs" style="margin-left: 55px;">
                 <h1 class="h1-summary">Learning Histology with us!</h1>
                 <hr>
                 <h3>Learning histology can be fun!</h3>
@@ -96,7 +97,7 @@
                 <br>
                 <h3>Enjoy your journey ahead! </h3>
                 <hr>
-
+            </div>
 
 
 
