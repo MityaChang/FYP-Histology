@@ -25,9 +25,18 @@ if (!(isset($_SESSION['email']))) {
         <li><a href="welcome.php?q=1"><i class="bi bi-clipboard-check"></i>Quiz</a></li>
         <li><a href="Feedback.php"><i class="bi bi-archive-fill"></i>Feedback</a></li>
     </ul>
-    
+
     <ul class=" ml-auto">
+        <li  class="nav-item"> <button type="button" tabindex="0" class="dropdown-item"><i class="bi bi-person"></i>Admin Account</button></li>
+
         <li  class="nav-item"> <a class="nav-link" href="logoutUser.php"><i class="bi bi-box-arrow-right"></i>&nbsp;Logout/<?php echo $email ?></a></li>
     </ul>
+    
+    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(-100px, 21px, 0px); top: 0px; left: 0px; will-change: transform;">
+        <button type="button" tabindex="0" class="dropdown-item"><i class="bi bi-person"></i>Admin Account</button>
+        <div tabindex="-1" class="dropdown-divider"></div>
+        <a class="dropdown-item" href="logout1.php?q=dashboard.php"><i class="bi bi-box-arrow-right"></i>&nbsp;Log out</a></li>
+
+    </div>
 </nav>
 
