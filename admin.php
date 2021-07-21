@@ -54,7 +54,7 @@
         <style type="text/css">
             body{
                   width: 100%;
-                  background: url(img/BgMainPage.png) ;
+                  background: url(img/slide.png) ;
                   background-position: center center;
                   background-repeat: no-repeat;
                   background-attachment: fixed;
