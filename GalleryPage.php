@@ -55,7 +55,7 @@
                                 <td rowspan="2"><img src="img/lungs/f1-lungs1-thumbnail.png" style="width:100%" onclick="openLungsModal();currentSlide2(1)" class="hover-shadow cursor"></td>
                             </tr>
                             <tr>  
-                                <td colspan="2" rowspan="2"><br><b>Lungs<b/> are important organ that helps with gaseous exchange. Have you ever wonder how does it looks like under microscope?
+                                <td colspan="2" rowspan="2"><br><b>Lungs</b> are important organ that helps with gaseous exchange. Have you ever wonder how does it looks like under microscope?
                                 <br>Click on the image to find out more!</td>
                             </tr>
                         </tbody>
