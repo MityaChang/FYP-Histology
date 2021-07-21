@@ -29,7 +29,7 @@ if (!(isset($_SESSION['email']))) {
     <ul class=" ml-auto">
        
         <li  class="nav-item dropdown"> 
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <?php echo $email ?>
             </button>
         
