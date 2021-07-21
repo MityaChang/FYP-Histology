@@ -45,16 +45,15 @@
         <div class="container col-12" style="margin-top: 75px;">
             <h1 class="h1-histology"><b>Histology</b></h1>
 
-                   <div class="row" style="margin-left: 25px">
-                    <div class=" card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
-                        <div class="card-body">
+                   <div class="row" style="margin-left: 10px">
+                  
+                             <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
                             <img src="img/testes/f5-testes-thumbnail.png" class ="round-circle" id="cardImage" alt=""/>
                             <div class="overlay">
                                 <div class="text">Testes</div>
                             </div>
-
                         </div>
-                    </div>
+                    
                     <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
                         <img src="img/kidney/f1-kidney-thumbnail.png" class ="round-circle" id="cardImage" alt=""/>
                         <div class="overlay">
@@ -72,7 +71,7 @@
                        <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
                            <img src="img/small-intestine/f6-smInt-thumbnail.png" class ="round-circle" id="cardImage" alt=""/>
                         <div class="overlay">
-                            <div class="text">Heart</div>
+                            <div class="text">Small Intestine</div>
                         </div>
                     </div>
                        <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
@@ -82,6 +81,7 @@
                         </div>
                     </div>
                 </div>
+            
             <br>
             <div class="paragraphs" style="margin-left: 55px;">
                 <h1 class="h1-summary">Learning Histology with us!</h1>
