@@ -15,31 +15,24 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
   
 } 
 else {
-    echo '<script>alert("Please enter a valid email")</script>';
+    echo "<script type='text/javascript'>alert('Please reenter your email'); window.location.href='Feedback.php';</script>";
+    exit();
     
    
 }
-if(empty($query)){
-    echo '<script>alert("Please reenter your feedback")</script>';
-    
-   
-}
-
 
 $status = mysqli_query($link, $query) or die(mysqli_error($link));
 
 if ($status) {
-    $msg = '<script>alert("Thank you for your feedback")</script>';
-    echo $msg;
-    sleep(header("location: Feedback.php")+2);
+    echo "<script type='text/javascript'>alert('Thank you for your feedback'); window.location.href='Feedback.php';</script>";
+//    header("location: Feedback.php");
     exit();
 } else {
-    echo '<script>alert("Please reenter your feedback")</script>';
-    echo $msg;
-    sleep(header("location: Feedback.php")+2);
+
+    echo "<script type='text/javascript'>alert('Please reenter your feedback'); window.location.href='Feedback.php';</script>";
+
     exit();
 }
 
-echo $msg;
 
 ?>
