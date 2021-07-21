@@ -7,9 +7,9 @@
 //$link = mysqli_connect($db_host,$db_user,$db_pass,$db_name) or 
 //        die(mysqli_connect_error());
 
-$connectstr_dbhost = 'localhost';
-$connectstr_dbname = 'fyphistology';
-$connectstr_dbusername = 'root';
+$connectstr_dbhost = '';
+$connectstr_dbname = '';
+$connectstr_dbusername = '';
 $connectstr_dbpassword = '';
 
 foreach ($_SERVER as $key => $value) {
