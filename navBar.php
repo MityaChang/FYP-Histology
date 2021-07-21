@@ -29,7 +29,9 @@ if (!(isset($_SESSION['email']))) {
     <ul class=" ml-auto">
        
         <li  class="nav-item dropdown"> 
-            <a class="nav-link" href="logoutUser.php"><i class="bi bi-box-arrow-right"></i><?php echo $email ?></a></li>
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <?php echo $email ?>
+            </button>
         
         <div class="dropdown-menu" style="padding: 10px">
                             
