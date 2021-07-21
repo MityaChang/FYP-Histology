@@ -1,3 +1,8 @@
+<script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
 <?php
 include_once 'dbFunctions.php';
 session_start();
@@ -29,7 +34,7 @@ if (!(isset($_SESSION['email']))) {
     <ul class=" ml-auto">
        
         <li  class="nav-item dropdown"> 
-            <button class="btn btn-custom dropdown-toggle"  style="background-color: transparent" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="btn dropdown-toggle" type="button"  onclick="myFunction()" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <?php echo $email ?>
             </button>
         
