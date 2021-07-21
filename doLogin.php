@@ -15,7 +15,7 @@ if (isset($_POST["submit"])) {
 
     loginUser($link, $username, $pass);
 } else {
-    header("location: HomePage.php");
+    header("location: HomePage.php?error=authenticate Failed");
     exit();
 }
 ?>

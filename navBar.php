@@ -27,8 +27,7 @@ if (!(isset($_SESSION['email']))) {
     </ul>
 
     <ul class=" ml-auto">
-        <li  class="nav-item"> <button type="button" tabindex="0" class="dropdown-item"><i class="bi bi-person"></i>Admin Account</button></li>
-
+       
         <li  class="nav-item"> <a class="nav-link" href="logoutUser.php"><i class="bi bi-box-arrow-right"></i>&nbsp;Logout/<?php echo $email ?></a></li>
     </ul>
     
