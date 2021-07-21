@@ -48,28 +48,15 @@
                     <table>
                         <tbody>
                             <tr>
-                                <th colspan="3" style="text-align:left;">Skeletal Muscle</th>   
+                                <th colspan="3" style="text-align:left;">Lungs</th>
                             </tr>
                             <tr>
                                 <td colspan="2" class="description"><b>Description</b></td>
-                                <td rowspan="2"> <img src="img/skeletal-muscle/1M15_0.7x.jpg" style="width:100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></td>
+                                <td rowspan="2"><img src="img/lungs/f1-lungs1-thumbnail.png" style="width:100%" onclick="openLungsModal();currentSlide2(1)" class="hover-shadow cursor"></td>
                             </tr>
                             <tr>  
-                                <td colspan="2" rowspan="2">Placeholder for Skeletal Muscles
-                                    <br>Click on the image to find out more!</td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <th colspan="3" style="text-align:left;">Heart</th>   
-                            </tr>
-                            <tr>
-                                <td colspan="2" class="description"><b>Description</b></td>
-                                <td rowspan="2"><img src="img/heart/organ1heart.jpg" style="width:100%" onclick="openHeartModal();currentSlide1(1)" class="hover-shadow cursor"></td>
-                            </tr>
-                            <tr>  
-                                <td colspan="2" rowspan="2">Placeholder for Heart
-                                    <br>Click on the image to find out more!</td>
+                                <td colspan="2" rowspan="2"><br>Lungs are important organ that helps with gaseous exchange. Have you ever wonder how does it looks like under microscope?
+                                <br>Click on the image to find out more!</td>
                             </tr>
                         </tbody>
                         <tbody>
@@ -78,14 +65,14 @@
                             </tr>
                             <tr>
                                 <td colspan="2" class="description"><b>Description</b></td>
-                                <td rowspan="2"><img src="img/liver/f1-liver-thumbnail.png" style="width:100%" onclick="openLiverModal();currentSlide3(1)" class="hover-shadow cursor"></td>
+                                 <td rowspan="2"><img src="img/liver/f1-liver-thumbnail.png" style="width:100%" onclick="openLiverModal();currentSlide3(1)" class="hover-shadow cursor"></td>
                             </tr>
-                            <tr>  
-                                <td colspan="2" rowspan="2"> <br>Liver is one of the largest organ in the body and it helps to detoxifies chemicals and metabolizes drugs.  
+                           <tr>  
+                                <td colspan="2" rowspan="2"><br>Liver is one of the largest organ in the body and it helps to detoxifies chemicals and metabolizes drugs.  
                                 <br>Click on the image to find out more about how the liver looks like under the microscope!</td>
                             </tr>
                         </tbody>
-                         <tbody>
+                        <tbody>
                             <tr>
                                 <th colspan="3" style="text-align:left;">Kidney</th>   
                             </tr>
@@ -98,58 +85,70 @@
                                 <br>Give our kidneys some appreciation and let's look at what makes it up under the microscope!</td>
                             </tr>
                         </tbody>
+                         <tbody>
+                            <tr>
+                                <th colspan="3" style="text-align:left;">Testes</th>   
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="description"><b>Description</b></td>
+                                <td rowspan="2"><img src="img/testes/f5-testes-thumbnail.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></td>
+                            </tr>
+                            <tr>  
+                                <td colspan="2" rowspan="2"><br>Other than the ovaries, testes is the other organ that plays a part in reproduction.
+                                <br>Take a look at which structures play a major role in sperm development! </td>
+                            </tr>
+                        </tbody>
+                         <tbody>
+                            <tr>
+                                <th colspan="3" style="text-align:left;">Small Intestine</th>   
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="description"><b>Description</b></td>
+                                <td rowspan="2"><img src="img/small-intestine/f6-smInt-thumbnail.png" style="width:100%" onclick="openSmIntModal();currentSlide1(1)" class="hover-shadow cursor"></td>
+                            </tr>
+                            <tr>  
+                                <td colspan="2" rowspan="2"><br>Small intestine helps with digestion and allows nutrients to take place.
+                                <br>Click here to find more about the different structures of the small intestine! </td>
+                            </tr>
+                        </tbody>
                     </table>
-
-
                 </div>
                 <br/><br/>  
-                <!-------------------------------------------------- Skeletal Modal ----------------------------------------------------------------->
+                <!-------------------------------------------------- Testes Modal ----------------------------------------------------------------->
                 <div id="myModal" class="modal">
                     <span class="close cursor" onclick="closeModal()">&times;</span>
                     <div class="modal-content">
 
                         <div class="mySlides">
                             <div class="numbertext">1 / 10</div>
-                            <img src="img/skeletal-muscle/1M15_0.7x.jpg" style="width:100%;">
+                            <img src="img/testes/normal-testes.png" style="width:100%;">
                         </div>
 
                         <div class="mySlides">
                             <div class="numbertext">2 / 10</div>
-                            <img src="img/skeletal-muscle/1M18_0.5x.jpg" style="width:100%">
+                            <img src="img/testes/f5-testes-stains.png" style="width:100%;">
                         </div>
 
                         <div class="mySlides">
                             <div class="numbertext">3 / 10</div>
-                            <img src="img/skeletal-muscle/1M19_0.7x.jpg" style="width:100%">
+                            <img src="img/testes/f5-testes.png" style="width:100%;">
                         </div>
 
                         <div class="mySlides">
                             <div class="numbertext">4 / 10</div>
-                            <img src="img/skeletal-muscle/1M22_1.5x.jpg" style="width:100%">
+                            <img src="img/testes/f5-testes2.png" style="width:100%;">
                         </div>
                         <div class="mySlides">
                             <div class="numbertext">5 / 10</div>
-                            <img src="img/skeletal-muscle/1M23_0.9x.jpg" style="width:100%">
+                            <img src="img/testes/f5-testes3.png" style="width:100%;">
                         </div>
                         <div class="mySlides">
                             <div class="numbertext">6 / 10</div>
-                            <img src="img/skeletal-muscle/1M24_0.7x.jpg" style="width:100%">
+                            <img src="img/testes/f5-testes4.png" style="width:100%;">
                         </div>
                         <div class="mySlides">
                             <div class="numbertext">7 / 10</div>
-                            <img src="img/skeletal-muscle/1M09_1.4x.jpg" style="width:100%">
-                        </div>
-                        <div class="mySlides">
-                            <div class="numbertext">8 / 10</div>
-                            <img src="img/skeletal-muscle/1M13_0.8x.jpg" style="width:100%">
-                        </div>
-                        <div class="mySlides">
-                            <div class="numbertext">9 / 10</div>
-                            <img src="img/skeletal-muscle/1M16_0.7x.jpg" style="width:100%">
-                        </div>
-                        <div class="mySlides">
-                            <div class="numbertext">10 / 10</div>
-                            <img src="img/skeletal-muscle/1M17_0.8x.jpg" style="width:100%">
+                            <img src="img/testes/f5-testes5.png" style="width:100%;">
                         </div>
 
 
@@ -162,90 +161,64 @@
 
                     </div>
                     <div class="column1">
-                        <img class="demo cursor" src="img/skeletal-muscle/1M15_0.7x.jpg" style="width:95%" onclick="currentSlide(1)" alt="1M15">
+                        <img class="demo cursor" src="img/testes/normal-testes.png" style="width:95%" onclick="currentSlide(1)" alt="Slide on Normal Testes">
                     </div>
                     <div class="column1">
-                        <img class="demo cursor" src="img/skeletal-muscle/1M18_0.5x.jpg" style="width:95%" onclick="currentSlide(2)" alt="1M18">
+                       <img class="demo cursor" src="img/testes/f5-testes-stains.png" style="width:95%" onclick="currentSlide(2)" alt="Slide on stains">
                     </div>
                     <div class="column1">
-                        <img class="demo cursor" src="img/skeletal-muscle/1M19_0.7x.jpg" style="width:95%" onclick="currentSlide(3)" alt="1M19">
+                      <img class="demo cursor" src="img/testes/f5-testes.png" style="width:95%" onclick="currentSlide(3)" alt="Figure 1: Testes stained with H&E stain.">
                     </div>
                     <div class="column1">
-                        <img class="demo cursor" src="img/skeletal-muscle/1M22_1.5x.jpg" style="width:95%" onclick="currentSlide(4)" alt="1M22">
+                      <img class="demo cursor" src="img/testes/f5-testes2.png" style="width:95%" onclick="currentSlide(4)" alt="Figure 2: Testes stained with H&E stain.">
                     </div>
                     <div class="column1">
-                        <img class="demo cursor" src="img/skeletal-muscle/1M23_0.9x.jpg" style="width:95%" onclick="currentSlide(5)" alt="1M23">
+                       <img class="demo cursor" src="img/testes/f5-testes3.png" style="width:95%" onclick="currentSlide(5)" alt="Figure 3: Testes stained with PAS stain.">
                     </div>       
                     <div class="column1">
-                        <img class="demo cursor" src="img/skeletal-muscle/1M24_0.7x.jpg" style="width:95%" onclick="currentSlide(6)" alt="1M24">
+                       <img class="demo cursor" src="img/testes/f5-testes4.png" style="width:95%" onclick="currentSlide(6)" alt="Figure 4: Testes stained with MT stain.">
                     </div>
                     <div class="column1">
-                        <img class="demo cursor" src="img/skeletal-muscle/1M09_1.4x.jpg" style="width:95%" onclick="currentSlide(7)" alt="1M09">
+                        <img class="demo cursor" src="img/testes/f5-testes5.png" style="width:95%" onclick="currentSlide(7)" alt="Figure 5: Testes stained with RT stain.">
                     </div>
-                    <div class="column1">
-                        <img class="demo cursor" src="img/skeletal-muscle/1M13_0.8x.jpg" style="width:95%" onclick="currentSlide(8)" alt="1M13">
-                    </div>
-                    <div class="column1">
-                        <img class="demo cursor" src="img/skeletal-muscle/1M16_0.7x.jpg" style="width:95%" onclick="currentSlide(9)" alt="1M16">
-                    </div>
-                    <div class="column1">
-                        <img class="demo cursor" src="img/skeletal-muscle/1M17_0.8x.jpg" style="width:95%" onclick="currentSlide(10)" alt="1M17">
-                    </div>
-
                 </div>         
-                <!------------------------------------------ End of Skeletal Muscle Modal ------------------------------------------------------->
+                <!------------------------------------------ End of Testes Muscle Modal ------------------------------------------------------->
 
 
                 <div class="col-12" >
-                    <!------------------------------------------ End of Heart Light box -------------------------------------------------------------->
-                    <div id="heartModal" class="modal">
-                        <span class="close cursor" onclick="closeHeartModal()">&times;</span>
+                    <!------------------------------------------ Start of Small Intestine Light box -------------------------------------------------------------->
+                    <div id="smIntModal" class="modal">
+                        <span class="close cursor" onclick="closeSmIntModal()">&times;</span>
                         <div class="modal-content">
 
-                            <div class="heartSlides">
+                            <div class="smIntSlides">
                                 <div class="numbertext">1 / 10</div>
-                                <img src="img/heart/organ1heart.jpg" style="width:100%">
+                                <img src="img/small-intestine/small-intestine.png" style="width:100%">
                             </div>
-
-                            <div class="heartSlides">
+                            <div class="smIntSlides">
                                 <div class="numbertext">2 / 10</div>
-                                <img src="img/heart/organ2heart.jpg" style="width:100%">
+                               <img src="img/small-intestine/smInt-stains.png" style="width:100%">
                             </div>
-
-                            <div class="heartSlides">
+                            <div class="smIntSlides">
                                 <div class="numbertext">3 / 10</div>
-                                <img src="img/heart/organ3heart.jpg" style="width:100%">
+                                <img src="img/small-intestine/f6-smInt1.png" style="width:100%">
                             </div>
-
-                            <div class="heartSlides">
+                            <div class="smIntSlides">
                                 <div class="numbertext">4 / 10</div>
-                                <img src="img/heart/organ4heart.jpg" style="width:100%">
+                                <img src="img/small-intestine/f6-smInt2.png"style="width:100%">
                             </div>
-                            <div class="heartSlides">
+                            <div class="smIntSlides">
                                 <div class="numbertext">5 / 10</div>
-                                <img src="img/heart/organ5heart.jpg" style="width:100%">
+                                <img src="img/small-intestine/f6-smInt3.png" style="width:100%">
                             </div>
-                            <div class="heartSlides">
+                            <div class="smIntSlides">
                                 <div class="numbertext">6 / 10</div>
-                                <img src="img/heart/organ6heart.jpg" style="width:100%">
+                                 <img src="img/small-intestine/f6-smInt4.png" style="width:100%">
                             </div>
-                            <div class="heartSlides">
+                            <div class="smIntSlides">
                                 <div class="numbertext">7 / 10</div>
-                                <img src="img/heart/organ7heart.jpg" style="width:100%">
+                                <img src="img/small-intestine/f6-smInt5.png" style="width:100%">
                             </div>
-                            <div class="heartSlides">
-                                <div class="numbertext">8 / 10</div>
-                                <img src="img/heart/organ8heart.jpg" style="width:100%">
-                            </div>
-                            <div class="heartSlides">
-                                <div class="numbertext">9 / 10</div>
-                                <img src="img/heart/organ9heart.jpg" style="width:100%">
-                            </div>
-                            <div class="heartSlides">
-                                <div class="numbertext">10 / 10</div>
-                                <img src="img/heart/organ10heart.jpg" style="width:100%">
-                            </div>
-
 
                             <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides1(1)">&#10095;</a>
@@ -256,35 +229,27 @@
 
                         </div>
                         <div class="column1">
-                            <img class="demo1 cursor" src="img/heart/organ1heart.jpg" style="width:95%" onclick="currentSlide1(1)" alt="Heart 1">
+                            <img class="demo1 cursor" src="img/small-intestine/small-intestine.png" style="width:95%" onclick="currentSlide1(1)" alt="Slide on Small Intestine">
                         </div>
                         <div class="column1">
-                            <img class="demo1 cursor" src="img/heart/organ2heart.jpg" style="width:95%" onclick="currentSlide1(2)" alt="Heart 2">
+                            <img class="demo1 cursor" src="img/small-intestine/smInt-stains.png" style="width:95%" onclick="currentSlide1(2)" alt="Slide on Stains">
                         </div>
                         <div class="column1">
-                            <img class="demo1 cursor" src="img/heart/organ3heart.jpg" style="width:95%" onclick="currentSlide1(3)" alt="Heart 3">
+                            <img class="demo1 cursor" src="img/small-intestine/f6-smInt1.png" style="width:95%" onclick="currentSlide1(3)" alt="Figure 1: Small intestine stained with H&E stain.">
                         </div>
                         <div class="column1">
-                            <img class="demo1 cursor" src="img/heart/organ4heart.jpg" style="width:95%" onclick="currentSlide1(4)" alt="Heart 4">
+                            <img class="demo1 cursor" src="img/small-intestine/f6-smInt2.png" style="width:95%" onclick="currentSlide1(4)" alt="Figure 2: Small intestine stained with H&E stain.">
                         </div>
                         <div class="column1">
-                            <img class="demo1 cursor" src="img/heart/organ5heart.jpg" style="width:95%" onclick="currentSlide1(5)" alt="Heart 5">
+                            <img class="demo1 cursor" src="img/small-intestine/f6-smInt3.png" style="width:95%" onclick="currentSlide1(5)" alt="Figure 3: Small intestine stained with RT stain.">
                         </div>
                         <div class="column1">
-                            <img class="demo1 cursor" src="img/heart/organ6heart.jpg" style="width:95%" onclick="currentSlide1(6)" alt="Heart 6">
+                            <img class="demo1 cursor" src="img/small-intestine/f6-smInt4.png" style="width:95%" onclick="currentSlide1(6)" alt="Figure 4: Small intestine stained with MT stain.">
                         </div>
                         <div class="column1">
-                            <img class="demo1 cursor" src="img/heart/organ7heart.jpg" style="width:95%" onclick="currentSlide1(7)" alt="Heart 7">
+                            <img class="demo1 cursor" src="img/small-intestine/f6-smInt5.png" style="width:95%" onclick="currentSlide1(7)" alt="Figure 5: Small intestine stained with PAS stain.">
                         </div>
-                        <div class="column1">
-                            <img class="demo1 cursor" src="img/heart/organ8heart.jpg" style="width:95%" onclick="currentSlide1(8)" alt="Heart 8">
-                        </div>
-                        <div class="column1">
-                            <img class="demo1 cursor" src="img/heart/organ9heart.jpg" style="width:95%" onclick="currentSlide1(9)" alt="Heart 9">
-                        </div>
-                        <div class="column1">
-                            <img class="demo1 cursor" src="img/heart/organ10heart.jpg" style="width:95%" onclick="currentSlide1(10)" alt="Heart 10">
-                        </div>   
+                       
                     </div>     
                     <!---------------------------------------------- End of Heart Modal ------------------------------------------------------------->
                 </div>        

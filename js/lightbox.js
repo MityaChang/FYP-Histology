@@ -1,5 +1,5 @@
 
-/* Skeleton Muscles JavaScript */
+/* Testes JavaScript */
 function openModal() {
     document.getElementById("myModal").style.display = "block";
 }
@@ -41,35 +41,35 @@ function showSlides(n) {
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
-/* Organ - Heart JavaScript */
-function openHeartModal() {
-    document.getElementById("heartModal").style.display = "block";
+/* Organ - Small Intestine JavaScript */
+function openSmIntModal() {
+    document.getElementById("smIntModal").style.display = "block";
 }
 
-function closeHeartModal() {
-    document.getElementById("heartModal").style.display = "none";
+function closeSmIntModal() {
+    document.getElementById("smIntModal").style.display = "none";
 }
 
-var slideHeartIndex = 1;
-showSlides1(slideHeartIndex);
+var slideSmIntIndex = 1;
+showSlides1(slideSmIntIndex);
 
 function plusSlides1(m) {
-    showSlides1(slideHeartIndex += m);
+    showSlides1(slideSmIntIndex += m);
 }
 
 function currentSlide1(m) {
-    showSlides1(slideHeartIndex = m);
+    showSlides1(slideSmIntIndex = m);
 }
 function showSlides1(m) {
     var j;
-    var slides1 = document.getElementsByClassName("heartSlides");
+    var slides1 = document.getElementsByClassName("smIntSlides");
     var dots1 = document.getElementsByClassName("demo1");
     var captionText1 = document.getElementById("caption1");
     if (m > slides1.length) {
-        slideHeartIndex = 1;
+        slideSmIntIndex = 1;
     }
     if (m < 1) {
-        slideHeartIndex = slides1.length;
+        slideSmIntIndex = slides1.length;
     }
     for (j = 0; j < slides1.length; j++) {
         slides1[j].style.display = "none";
@@ -77,9 +77,9 @@ function showSlides1(m) {
     for (j = 0; j < dots1.length; j++) {
         dots1[j].className = dots1[j].className.replace(" active1", "");
     }
-    slides1[slideHeartIndex - 1].style.display = "block";
-    dots1[slideHeartIndex - 1].className += " active1";
-    captionText1.innerHTML = dots1[slideHeartIndex - 1].alt;
+    slides1[slideSmIntIndex - 1].style.display = "block";
+    dots1[slideSmIntIndex - 1].className += " active1";
+    captionText1.innerHTML = dots1[slideSmIntIndex - 1].alt;
 }
 
 /* Organ - Lungs JavaScript */

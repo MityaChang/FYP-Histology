@@ -77,7 +77,7 @@ body {
     cursor: pointer;
 }
 
-.mySlides, .heartSlides, .lungsSlides, .liverSlides {
+.mySlides, .smIntSlides, .lungsSlides, .liverSlides {
     display: none;
 }
 
@@ -133,12 +133,12 @@ body {
     padding-top: 10px;
 }
 
-.demo, .demo1, .demo2, .demo3 {
+.demo, .demo1, .demo2, .demo3, .demo4, .demo5 {
     opacity: 0.6;
 }
 
-.active, .active1, .active2, .active3, 
-.demo:hover, .demo1:hover, .demo2:hover, .demo3:hover {
+.active, .active1, .active2, .active3, .active4, .active5, 
+.demo:hover, .demo1:hover, .demo2:hover, .demo3:hover, .demo4:hover, .demo5:hover {
     opacity: 1;
 }
 
