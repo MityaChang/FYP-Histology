@@ -28,7 +28,14 @@ if (!(isset($_SESSION['email']))) {
 
     <ul class=" ml-auto">
        
-        <li  class="nav-item"> <a class="nav-link" href="logoutUser.php"><i class="bi bi-box-arrow-right"></i>&nbsp;Logout/<?php echo $email ?></a></li>
+        <li  class="nav-item dropdown"> 
+            <a class="nav-link" href="logoutUser.php"><i class="bi bi-box-arrow-right"></i>&nbsp;Logout/<?php echo $email ?></a></li>
+        
+        <div class="dropdown-menu" style="padding: 10px">
+                            
+            <a class="dropdown-item" href="logoutUser.php">Log out</a> 
+                          
+                        </div>
     </ul>
     
     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(-100px, 21px, 0px); top: 0px; left: 0px; will-change: transform;">
