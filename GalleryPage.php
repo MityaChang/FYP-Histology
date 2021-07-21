@@ -55,7 +55,7 @@
                                 <td rowspan="2"><img src="img/lungs/f1-lungs1-thumbnail.png" style="width:100%" onclick="openLungsModal();currentSlide2(1)" class="hover-shadow cursor"></td>
                             </tr>
                             <tr>  
-                                <td colspan="2" rowspan="2"><br>Lungs are important organ that helps with gaseous exchange. Have you ever wonder how does it looks like under microscope?
+                                <td colspan="2" rowspan="2"><br><b>Lungs<b/> are important organ that helps with gaseous exchange. Have you ever wonder how does it looks like under microscope?
                                 <br>Click on the image to find out more!</td>
                             </tr>
                         </tbody>
@@ -68,7 +68,7 @@
                                  <td rowspan="2"><img src="img/liver/f1-liver-thumbnail.png" style="width:100%" onclick="openLiverModal();currentSlide3(1)" class="hover-shadow cursor"></td>
                             </tr>
                            <tr>  
-                                <td colspan="2" rowspan="2"><br>Liver is one of the largest organ in the body and it helps to detoxifies chemicals and metabolizes drugs.  
+                               <td colspan="2" rowspan="2"><br><b>Liver</b> is one of the largest organ in the body and it helps to detoxifies chemicals and metabolizes drugs.  
                                 <br>Click on the image to find out more about how the liver looks like under the microscope!</td>
                             </tr>
                         </tbody>
@@ -81,7 +81,7 @@
                                 <td rowspan="2"><img src="img/kidney/f1-kidney-thumbnail.png" style="width:100%" onclick="openKidneyModal();currentSlide4(1)" class="hover-shadow cursor"></td>
                             </tr>
                             <tr>  
-                                <td colspan="2" rowspan="2"><br>Without your kidney, your body would be filled with waste.
+                                <td colspan="2" rowspan="2"><br>Without your <b>Kidney</b>, your body would be filled with waste.
                                 <br>Give our kidneys some appreciation and let's look at what makes it up under the microscope!</td>
                             </tr>
                         </tbody>
@@ -94,7 +94,7 @@
                                 <td rowspan="2"><img src="img/testes/f5-testes-thumbnail.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></td>
                             </tr>
                             <tr>  
-                                <td colspan="2" rowspan="2"><br>Other than the ovaries, testes is the other organ that plays a part in reproduction.
+                                <td colspan="2" rowspan="2"><br>Other than the ovaries, <b>testes</b> is the other organ that plays a part in reproduction.
                                 <br>Take a look at which structures play a major role in sperm development! </td>
                             </tr>
                         </tbody>
@@ -107,7 +107,7 @@
                                 <td rowspan="2"><img src="img/small-intestine/f6-smInt-thumbnail.png" style="width:100%" onclick="openSmIntModal();currentSlide1(1)" class="hover-shadow cursor"></td>
                             </tr>
                             <tr>  
-                                <td colspan="2" rowspan="2"><br>Small intestine helps with digestion and allows nutrients to take place.
+                                <td colspan="2" rowspan="2"><br><b>Small intestine</b> helps with digestion and allows nutrients to take place.
                                 <br>Click here to find more about the different structures of the small intestine! </td>
                             </tr>
                         </tbody>
