@@ -38,7 +38,7 @@ if (!(isset($_SESSION['email']))) {
                 <?php echo $email ?>
             </button>
         
-        <div class="dropdown-menu" style="padding: 10px">
+        <div class="dropdown-menu" id="myDropdown" style="padding: 10px">
                             
             <a class="dropdown-item" href="logoutUser.php">Log out</a> 
                           
