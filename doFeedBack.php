@@ -30,8 +30,12 @@ $status = mysqli_query($link, $query) or die(mysqli_error($link));
 
 if ($status) {
     $msg = '<script>alert("Thank you for your feedback")</script>';
+    header("location: Feedback.php");
+    exit();
 } else {
     echo '<script>alert("Please reenter your feedback")</script>';
+    header("location: Feedback.php");
+    exit();
 }
 
 echo $msg;
