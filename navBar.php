@@ -1,8 +1,14 @@
+<head>
+    <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
 <script>
     function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 </script>
+</head>
 <?php
 include_once 'dbFunctions.php';
 session_start();
