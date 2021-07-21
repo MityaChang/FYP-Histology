@@ -48,9 +48,9 @@
                    <div class="row" style="margin-left: 25px">
                     <div class=" card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
                         <div class="card-body">
-                            <img src="img/skeletal-muscle/1M18_0.5x.jpg" class ="round-circle" id="cardImage" alt=""/>
+                            <img src="img/testes/f5-testes-thumbnail.png" class ="round-circle" id="cardImage" alt=""/>
                             <div class="overlay">
-                                <div class="text">Skeletal Muscle</div>
+                                <div class="text">Testes</div>
                             </div>
 
                         </div>
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                        <div class="card text-white mb-3 mt-4 ml-4" style="max-width: 20rem;">
-                           <img src="img/heart/organ4heart.jpg" class ="round-circle" id="cardImage" alt=""/>
+                           <img src="img/small-intestine/f6-smInt-thumbnail.png" class ="round-circle" id="cardImage" alt=""/>
                         <div class="overlay">
                             <div class="text">Heart</div>
                         </div>
