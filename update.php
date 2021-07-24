@@ -132,7 +132,7 @@ if (isset($_SESSION['key'])) {
 
 // Display status message
         echo $statusMsg;
-        header("location:dashboard.php?q=0");
+//        header("location:dashboard.php?q=0");
     }
 }
 //Student answering the quiz
