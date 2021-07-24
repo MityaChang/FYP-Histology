@@ -69,11 +69,11 @@ if (isset($_SESSION['key'])) {
             $qid = uniqid();
             $qns = $_POST['qns' . $i];
             $q3 = mysqli_query($link, "INSERT INTO questions VALUES  ('$eid','$qid','$qns' , '$ch' , '$i')");
-            
+
             $targetFilePath = $targetDir . basename($_FILES["file$i"]["name"]);
             $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
-            
-             if (!empty($_FILES["file$i"]["name"])) {
+            $statusMsg = '';
+            if (!empty($_FILES["file$i"]["name"])) {
                 // Allow certain file formats
                 $imageFileType = strtolower(pathinfo($targetFilePath, PATHINFO_EXTENSION));
                 $allowTypes = array('jpg', 'png', 'jpeg', 'gif', 'pdf');
@@ -97,7 +97,7 @@ if (isset($_SESSION['key'])) {
             } else {
                 $statusMsg = 'Please select a file to upload.';
             }
-            
+
             $oaid = uniqid();
             $obid = uniqid();
             $ocid = uniqid();
@@ -124,12 +124,9 @@ if (isset($_SESSION['key'])) {
             }
             $qans = mysqli_query($link, "INSERT INTO answer VALUES  ('$qid','$ansid')");
         }
-        $statusMsg = '';
+
 
 // File upload path
-
-       
-
 // Display status message
         echo $statusMsg;
 //        header("location:dashboard.php?q=0");
