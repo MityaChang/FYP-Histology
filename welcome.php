@@ -26,15 +26,23 @@ if (!(isset($_SESSION['email']))) {
     </head>
     <style>
         .navbar-custom{
-           background-image: url("./img/banner-SAS.jpg");
-           -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                    -o-background-size: cover;
-                    background-size: cover;
-                    
+            background-image: url("./img/banner-SAS.jpg");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
 
         }
-   
+        .image-fluid {
+            transition:transform 0.25s ease;
+        }
+
+        .image-fluid:hover {
+            -webkit-transform:scale(1.2); /* or some other value */
+            transform:scale(1.2);
+        }
+
 
     </style>
     <body>
@@ -54,7 +62,7 @@ if (!(isset($_SESSION['email']))) {
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-left">
-                                                 <!-- this echo ask qikai if needed -->
+                        <!-- this echo ask qikai if needed -->
                         <li <?php if (@$_GET['q'] == 1) echo'class="active"'; ?> class="nav-item active"> <a href="welcome.php?q=1" id="textColor" class="nav-link"><i class="bi bi-house-door-fill"></i>&nbsp;Home</a></li>
                         <li <?php if (@$_GET['q'] == 2) echo'class="active"'; ?> class="nav-item"> <a href="welcome.php?q=2" id="textColor" class="nav-link"><i class="bi bi-book"></i>&nbsp;History</a></li>
                         <li <?php if (@$_GET['q'] == 3) echo'class="active"'; ?>  class="nav-item"> <a href="welcome.php?q=3" id="textColor" class="nav-link"><i class="bi bi-bar-chart-line-fill"></i>&nbsp;Ranking</a></li>
@@ -110,6 +118,11 @@ if (!(isset($_SESSION['email']))) {
                             $qid = $row['qid'];
                             echo '<b>Question &nbsp;' . $sn . '&nbsp;:<br /><br />' . $qns . '</b><br /><br />';
                         }
+
+                        $query = mysqli_query($link, "select * from images where qid = '$qid'");
+                        while ($row = mysqli_fetch_assoc($query)) {
+                            echo '<img src="' . $row['file_name'] . '" style = "width:500px;height:300px;"class="image-fluid"/>';
+                        }
                         $q = mysqli_query($link, "SELECT * FROM options WHERE qid='$qid' ");
                         echo '<form action="update.php?q=quiz&step=2&eid=' . $eid . '&n=' . $sn . '&t=' . $total . '&qid=' . $qid . '" method="POST"  class="form-horizontal">
                         <br />';
@@ -143,7 +156,7 @@ if (!(isset($_SESSION['email']))) {
                             $s = $row['score'];
                             echo '<tr style="color:#990000"><td>Overall Score&nbsp;<i class="bi bi-calendar-check"></i></td><td>' . $s . '</td></tr>';
                         }
-                        echo '</table></div>';
+                        echo '</table><input class="btn btn-warning" type="submit" value="View Summary"></div>';
                     }
                     ?>
 

@@ -1,5 +1,6 @@
 <?php
 include_once 'dbFunctions.php';
+
 session_start();
 if (!(isset($_SESSION['email']))) {
     header("location:login.php");
@@ -55,15 +56,15 @@ if (!(isset($_SESSION['email']))) {
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(-100px, 21px, 0px); top: 0px; left: 0px; will-change: transform;">
                                             <button type="button" tabindex="0" class="dropdown-item"><i class="bi bi-person"></i>Admin Account</button>
                                             <div tabindex="-1" class="dropdown-divider"></div>
-                                             <a class="dropdown-item" href="logout1.php?q=dashboard.php"><i class="bi bi-box-arrow-right"></i>&nbsp;Log out</a></li>
-              
+                                            <a class="dropdown-item" href="logout1.php?q=dashboard.php"><i class="bi bi-box-arrow-right"></i>&nbsp;Log out</a></li>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                      </ul>
+                </ul>
             </div>
         </nav>
 
@@ -161,7 +162,8 @@ if (!(isset($_SESSION['email']))) {
                         echo ' 
                         <div class="row" style="align-items: center; justify-content: center;">
                         <h2 class="col-12 text-center">Enter Question Details</h2>
-                        <div class="col-md-7"><form class="form-horizontal title1" name="form" action="update.php?q=addqns&n=' . @$_GET['n'] . '&eid=' . @$_GET['eid'] . '&ch=4 "  method="POST">
+                        <div class="col-md-7">
+                        <form class="form-horizontal title1" name="form" action="update.php?q=addqns&n=' . @$_GET['n'] . '&eid=' . @$_GET['eid'] . '&ch=4 "  method="POST" enctype="multipart/form-data">
                         <fieldset>
                         ';
 
@@ -170,8 +172,12 @@ if (!(isset($_SESSION['email']))) {
                                     <div class="form-group">
                                         <label class="col-md-12 control-label" for="qns' . $i . ' "></label>  
                                         <div class="col-md-12">
-                                            <textarea rows="3" cols="5" name="qns' . $i . '" class="form-control" placeholder="Write question number ' . $i . ' here..."></textarea>  
+                                            <textarea rows="3" cols="5" name="qns' . $i . '" class="form-control" placeholder="Write question number ' . $i . ' here/Upload Image"></textarea>  
                                         </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="file'.$i.'" > Select image to upload:</label>
+                                        <input type="file" name="file'.$i.'" id="file'.$i.'" class="form-contro col-12">
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-12 control-label" for="' . $i . '1"></label>  
@@ -238,7 +244,7 @@ if (!(isset($_SESSION['email']))) {
                         echo '</table></div></div>';
                     }
                     ?>
-                    
+
                 </div>
             </div>
         </div>
