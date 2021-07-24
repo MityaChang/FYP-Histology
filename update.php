@@ -89,7 +89,7 @@ if (isset($_SESSION['key'])) {
                             $statusMsg = "File upload failed, please try again.";
                         }
                     } else {
-                        $statusMsg = "Sorry, there was an error uploading your file.". $_FILES["file"]["error"];
+                        $statusMsg = "Sorry, there was an error uploading your file.";
                     }
                 } else {
                     $statusMsg = 'Sorry, only JPG, JPEG, PNG, GIF, & PDF files are allowed to upload.';
@@ -129,7 +129,7 @@ if (isset($_SESSION['key'])) {
 // File upload path
 // Display status message
         echo $statusMsg;
-//        header("location:dashboard.php?q=0");
+        header("location:dashboard.php?q=0");
     }
 }
 //Student answering the quiz
