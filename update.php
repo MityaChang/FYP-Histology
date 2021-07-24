@@ -89,7 +89,7 @@ if (isset($_SESSION['key'])) {
                             $statusMsg = "File upload failed, please try again.";
                         }
                     } else {
-                        $statusMsg = "Sorry, there was an error uploading your file.";
+                        $statusMsg = "Sorry, there was an error uploading your file.". $_FILES["file"]["error"];
                     }
                 } else {
                     $statusMsg = 'Sorry, only JPG, JPEG, PNG, GIF, & PDF files are allowed to upload.';
