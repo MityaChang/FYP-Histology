@@ -365,7 +365,7 @@
 
                 </div>
                 <div class="column1">
-                    <img class="demo3 cursor" src="img/liver/liver.png" style="width:95%" onclick="currentSlide3(1)" alt="Slide on Normal Lung">
+                    <img class="demo3 cursor" src="img/liver/liver.png" style="width:95%" onclick="currentSlide3(1)" alt="Slide on Normal Liver">
                 </div>
                 <div class="column1">
                     <img class="demo3 cursor" src="img/liver/special-stains.png" style="width:95%" onclick="currentSlide3(2)" alt="Slide on Stains">
