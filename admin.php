@@ -50,6 +50,7 @@
 		<title>Admin Login | Online Quiz System</title>
 		<link rel="stylesheet" href="scripts/bootstrap/bootstrap.min.css">
 		<link rel="stylesheet" href="scripts/ionicons/css/ionicons.min.css">
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/form.css">
         <style type="text/css">
             body{
@@ -60,6 +61,8 @@
                   background-attachment: fixed;
                   background-size: cover;
                 }
+                
+   
           </style>
 	</head>
 
@@ -69,18 +72,29 @@
 				<div class="box-wrapper">				
 					<div class="box box-border">
 						<div class="box-body">
-						<center> <h5 style="font-family: Noto Sans;">Login to </h5><h4 style="font-family: Noto Sans;">Admin Page</h4></center><br>
+                                                    <center> <img src="img/histologyicon.png" style="width:200px; height: 200px" id="image" alt=""/> </center>
+						<center> <h5 style="font-family: Poppins;">Login to </h5><h4 style="font-family: Poppins;">Admin Page</h4></center><br>
 							<form method="post" action="admin.php" enctype="multipart/form-data">
 								<div class="form-group">
 									<label>Enter Your Email Id:</label>
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-addon" style="background-color: #ff6666">
+                                                                                <i class="fa fa-user" style="width:15px; color: #ffffff" aria-hidden="true"></i>   
+                                                                           
+                                                                        </div>
 									<input type="email" name="email" class="form-control">
+                                                                        </div>
 								</div>
 								<div class="form-group">
-									<label class="fw">Enter Your Password:
-										<a href="javascript:void(0)" class="pull-right">Forgot Password?</a>
-									</label>
+									<label class="fw">Enter Your Password:</label>
+                                                                         <div class="input-group">
+                                                                            <div class="input-group-addon" style="background-color: #ff6666">
+                                                                               <i class="fa fa-key" style="width:15px; color: #ffffff" aria-hidden="true"></i>
+                                                                            </div>
 									<input type="password" name="password" class="form-control">
+                                                                         </div>
 								</div> 
+                                                            <br>
 								<div class="form-group text-right">
 									<button class="btn btn-primary btn-block" name="submit">Login</button>
 								</div>

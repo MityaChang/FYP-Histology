@@ -7,46 +7,11 @@
         <?php include 'extension.html' ?>
         <script type="text/javascript" src="./js/signup.js"></script>
         <link rel="stylesheet" href="./css/signup.css">
-        <script>
-            $(document).ready(function () {
-                $("form").validate({
-                    rules: {
-                        username: {
-                            requried: true,
-                            minlength: 6
-                        },
-                        email: {
-                            requried: true
-                        },
-                        password: {
-                            requried: true
-                        },
-                        confirmPassword: {
-                            required: true
-                        }
-                    },
-                    messages: {
-                        username: {
-                            required: "Please enter your username"
-                        }, email: {
-                            required: "Please enter your email"
-                        }, password: {
-                            required: "Please enter your password"
-                        }, confirmPassword: {
-                            equalTo: "Please enter the same password"
-                        }
-                    },
-                    submitHandler: function () {
-                        return true;
-                    }
-                });
-            });
-        </script>
     </head>
 
     <body>
         <div id="formFooter">
-            <a href="./HomePage.php"><img src="img/RP-Logo.png" alt="Nature" class="rounded mx-auto d-block" /></a>
+            <a href="./HomePage.php"><img src="img/circle-logo.png" style="width:250; height:250" alt="Nature" class="rounded mx-auto d-block" /></a>
 
             <h1 style="text-align: center;">Register</h1>
             <p style="text-align: center;">Please fill in this form to register from a RP Account</p>

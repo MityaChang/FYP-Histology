@@ -20,7 +20,7 @@ if (!(isset($_SESSION['email']))) {
         <i class="fas fa-bars"></i>
     </label>
     <ul>
-        <li><a class="" href="HomePage.php"><i class="bi bi-house-fill"></i>Home</a></li>
+        <li><a href="HomePage.php"><i class="bi bi-house-fill"></i>Home</a></li>
         <li><a href="GalleryPage.php"><i class="bi bi-stack"></i>Slides</a></li>
         <li><a href="welcome.php?q=1"><i class="bi bi-clipboard-check"></i>Quiz</a></li>
         <li><a href="Feedback.php"><i class="bi bi-archive-fill"></i>Feedback</a></li>
@@ -41,10 +41,11 @@ if (!(isset($_SESSION['email']))) {
     </ul>
     
     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(-100px, 21px, 0px); top: 0px; left: 0px; will-change: transform;">
-        <button type="button" tabindex="0" class="dropdown-item"><i class="bi bi-person"></i>Admin Account</button>
+<!--        <button type="button" tabindex="0" class="dropdown-item"><i class="bi bi-person"></i>Admin Account</button>-->
         <div tabindex="-1" class="dropdown-divider"></div>
         <a class="dropdown-item" href="logout1.php?q=dashboard.php"><i class="bi bi-box-arrow-right"></i>&nbsp;Log out</a></li>
 
     </div>
+    
 </nav>
 

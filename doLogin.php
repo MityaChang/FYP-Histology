@@ -9,13 +9,12 @@ if (isset($_POST["submit"])) {
     require_once 'functions.php';
 
     if (emptyIpnutLogin($username, $pass) != false) {
-        header("location: login.php?error=emptyinput");
+       echo "<script type='text/javascript'>alert('Please enter your username/email and password!'); window.location.href='login.php';</script>";
         exit();
     }
-
     loginUser($link, $username, $pass);
 } else {
-    header("location: HomePage.php?error=authenticate Failed");
+     echo "<script type='text/javascript'>alert('Authentication failed, please try again with the correct login information!'); window.location.href='login.php';</script>";
     exit();
 }
 ?>

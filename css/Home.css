@@ -40,6 +40,8 @@ h5 {
     
  
 }
+
+
 /* ------------------------------------ */
 /* Body CSS */
 body {
@@ -85,7 +87,6 @@ body {
     filter: invert(100%);
 }
 
-
 /* ------------------------------------ */
 /* Container CSS */
 .container{ 
@@ -105,8 +106,8 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 150px;
-    width: 750px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
 /* On mouse-over, add a deeper shadow */

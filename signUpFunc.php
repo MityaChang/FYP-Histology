@@ -42,13 +42,7 @@ if (isset($_POST["submitBtn"])) {
     exit();
 }
 
-//    if(emptyInputSignup($name,$email,$pass,$passwordRepeat)!==false){
-//        header("location: ../Register.php?error=emptyinput");
-//        exit();
-//    }
-//} else {
-//    header("loaction: ../Register.php");
-//}
+
 ?>
 
 

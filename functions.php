@@ -91,15 +91,16 @@ function emptyIpnutLogin($username, $pass) {
     return $result;
 }
 
+// linked with doLogin.php
 function loginUser($link, $username, $pass) {
     $uidExists = uidExists($link, $username, $username);
     if ($uidExists == false) {
-        header("Location: login.php?error=wronglogins");
+         echo "<script type='text/javascript'>alert('Please enter the correct login information.'); window.location.href='login.php';</script>";
     }
     $pwdHashed = $uidExists["userPass"];
     $checkPwd = password_verify($pass, $pwdHashed);
     if ($checkPwd == false) {
-        header("Location: login.php?error=stmtfailed?error=wrongloginf");
+         echo "<script type='text/javascript'>alert('Please enter your password'); window.location.href='login.php';</script>";
         exit();
     } else if ($checkPwd == true) {
         session_start();
@@ -109,17 +110,4 @@ function loginUser($link, $username, $pass) {
         exit();
     }
 }
-
-//    $query = "select * from users where users where userName = '$username' and userPass = '".password_hash($pass, PASSWORD_DEFAULT)."'";
-//    $result = mysqli_query($link, $query);
-//    if (empty($result)) {
-//        echo $query;
-//    } else {
-//        foreach ($result as $i) {
-//            session_start();
-//            $_SESSION['email'] = $i['userEmail'];
-//            $_SESSION['username'] = $i['userName'];
-//        } 
-//    }
-//}
 ?>
