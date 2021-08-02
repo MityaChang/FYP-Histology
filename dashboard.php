@@ -100,11 +100,11 @@ if (!(isset($_SESSION['email']))) {
                     if (@$_GET['q'] == 1) {
                         $result = mysqli_query($link, "SELECT * FROM users") or die('Error');
                         echo '<div class="panel"><div class="table-responsive"><table class="table table-striped title1">
-                        <tr><td><center><b>S.N.</b></center></td><td><center><b>Name</b></center></td><td><center><b>Email</b></center></td><td><center><b>Action</b></center></td></tr>';
+                        <tr><td><center><b>S.N.</b></center></td><td><center><b>Email</b></center></td><td><center><b>Name</b></center></td><td><center><b>Action</b></center></td></tr>';
                         $c = 1;
                         while ($row = mysqli_fetch_array($result)) {
-                            $name = $row['userName'];
-                            $email = $row['userEmail'];
+                            $name = $row['userEmail'];
+                            $email = $row['userName'];
                             echo '<tr><td><center>' . $c++ . '</center></td><td><center>' . $name . '</center></td><td><center>' . $email . '</center></td><td><center><a title="Delete User" href="update.php?demail=' . $email . '"><b><i class="bi bi-trash"></i></b></a></center></td></tr>';
                         }
                         $c = 0;
