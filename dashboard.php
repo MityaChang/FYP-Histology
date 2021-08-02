@@ -74,7 +74,7 @@ if (!(isset($_SESSION['email']))) {
                 <div class="col-md-12">
                     <?php
                     if (@$_GET['q'] == 0) {
-                        echo "<h1><center>WELCOME TO Admin Page!!</center>
+                        echo "<br><h1><center>WELCOME TO Admin Page!!</center>
 					</h1>";
                     }
 
