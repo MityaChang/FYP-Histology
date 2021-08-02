@@ -217,9 +217,9 @@ if (!(isset($_SESSION['email']))) {
                                 <label class="col-md-12 control-label" for=""></label>
                                 <div class="col-md-12"> 
                                     <input  type="submit" style="margin-left:45%" class="btn btn-primary" value="Submit" class="btn btn-primary"/>
+
                                 </div>
                               </div>
-
                         </fieldset>
                         </form></div>';
                     }

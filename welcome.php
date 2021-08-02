@@ -22,6 +22,7 @@ if (!(isset($_SESSION['email']))) {
         <link  rel="stylesheet" href="css/font.css">
         <script src="js/jquery.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js"  type="text/javascript"></script>
+        <script src="js/imageZoom.js" type="text/javascript"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
     <style>
@@ -34,15 +35,43 @@ if (!(isset($_SESSION['email']))) {
 
 
         }
-        .image-fluid {
-            transition:transform 0.25s ease;
+        * {box-sizing: border-box;}
+
+        .img-zoom-container {
+            position: relative;
+
         }
 
-        .image-fluid:hover {
-            -webkit-transform:scale(1.2); /* or some other value */
-            transform:scale(1.2);
+        .img-zoom-lens {
+            position: absolute;
+
+            width: 100px;
+            height: 100px;
+        }
+        .img-zoom-lens:hover {
+            /*border: 5px solid #00FFFF;*/
+            background-repeat: repeat;      
+            /*set the size of the lens:*/
+            background-image: url(//img-tmdetail.alicdn.com/tps/i4/T12pdtXaldXXXXXXXX-2-2.png);
         }
 
+        .img-zoom-result {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            /*set the size of the result div:*/
+            width: 500px;
+            height: 300px;
+            bottom: 0px;
+            left: 520px;
+        }
+        /*        .image {
+                    transition:transform 0.25s ease;
+                }
+        
+                .image:hover {
+                    -webkit-transform:scale(2);  or some other value 
+                    transform:scale(2);
+                }*/
 
     </style>
     <body>
@@ -121,7 +150,11 @@ if (!(isset($_SESSION['email']))) {
 
                         $query = mysqli_query($link, "select * from images where qid = '$qid'");
                         while ($row = mysqli_fetch_assoc($query)) {
-                            echo '<img src="' . $row['file_name'] . '" style = "width:500px;height:300px;"class="image-fluid"/>';
+                            echo '<div class="img-zoom-container"><img id="myimage" src="' . $row['file_name'] . '" style = "width:500px;height:300px;"class="image-fluid"/>'
+                            . '<div id="myresult" class="img-zoom-result"></div>
+                                </div><script>
+                                imageZoom("myimage", "myresult");
+                                </script>';
                         }
                         $q = mysqli_query($link, "SELECT * FROM options WHERE qid='$qid' ");
                         echo '<form action="update.php?q=quiz&step=2&eid=' . $eid . '&n=' . $sn . '&t=' . $total . '&qid=' . $qid . '" method="POST"  class="form-horizontal">
@@ -156,7 +189,8 @@ if (!(isset($_SESSION['email']))) {
                             $s = $row['score'];
                             echo '<tr style="color:#990000"><td>Overall Score&nbsp;<i class="bi bi-calendar-check"></i></td><td>' . $s . '</td></tr>';
                         }
-                        echo '</table><input class="btn btn-warning" type="submit" value="View Summary"></div>';
+                        echo '</table><input class="btn btn-warning" type="submit" value="View Summary">'
+                        . '<input class="btn btn-warning" type="submit" value="Challenge fill in blank"></div>';
                     }
                     ?>
 
