@@ -238,7 +238,7 @@ if (!(isset($_SESSION['email']))) {
                             $eid = $row['eid'];
                             echo '<tr><td><center style="margin-top:30px;font-size: 20px;">' . $c++ . '</center></td><td><center style="margin-top:30px;font-size: 20px;">' . $title . '</center></td><td><center style="margin-top:30px;font-size: 20px;">' . $total . '</center></td><td><center style="margin-top:30px;font-size: 20px;">' . $sahi * $total . '</center></td>
                                                     
-<td><center><b><a href="updateQuiz.php' . $eid . '" class="pull-right btn sub1" style="margin:5px;background:green;color:black"><i class="bi bi-pencil-fill"></i>&nbsp;<span class="title1"><b>Update</b></span></a></b></center>
+<td><center><b><a href="updateQuiz.php?q=rmquiz&eid=' . $eid . '" class="pull-right btn sub1" style="margin:5px;background:green;color:black"><i class="bi bi-pencil-fill"></i>&nbsp;<span class="title1"><b>Update</b></span></a></b></center>
     <center><b><a href="update.php?q=rmquiz&eid=' . $eid . '" class="pull-right btn sub1" style="margin:5px;background:red;color:black"><i class="bi bi-trash-fill"></i>&nbsp;<span class="title1"><b>Remove</b></span></a></b></center></td>';
                         }
                         $c = 0;
