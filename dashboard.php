@@ -39,10 +39,10 @@ if (!(isset($_SESSION['email']))) {
                     <li <?php if (@$_GET['q'] == 0) echo'class="active nav-item"'; ?>><a href="dashboard.php?q=0" class="nav-link">Home<spanavn class="sr-only">(current)</span></a></li>
                     <li <?php if (@$_GET['q'] == 1) echo'class="active nav-item"'; ?>><a href="dashboard.php?q=1" class="nav-link">User</a></li>
                     <li <?php if (@$_GET['q'] == 2) echo'class="active nav-item"'; ?>><a href="dashboard.php?q=2" class="nav-link">Ranking</a></li>
-                    <li class="dropdown <?php if (@$_GET['q'] == 4 || @$_GET['q'] == 5) echo'active"'; ?>">
-                    <li class="nav-item"><a href="dashboard.php?q=4" class="nav-link">Add Quiz</a></li>
-                    <li class="nav-item"><a href="dashboard.php?q=5" class="nav-link">Remove Quiz</a></li>
-                     <li class="nav-item"><a href="dashboard.php?q=6" class="nav-link">Feedback</a></li>
+                    <li <?php if (@$_GET['q'] == 4) echo'class="active nav-item"'; ?>><a href="dashboard.php?q=4" class="nav-link">Add Quiz</a></li>
+                    <li <?php if (@$_GET['q'] == 5) echo'class="active nav-item"'; ?>><a href="dashboard.php?q=5" class="nav-link">Remove Quiz</a></li>
+                    <li <?php if (@$_GET['q'] == 6) echo'class="active nav-item"'; ?>><a href="dashboard.php?q=6" class="nav-link">View Feedback</a></li>
+
                 </ul>
                 <ul class="nav navbar-nav ml-auto">
                     <div class="header-btn-lg pr-0">
@@ -142,7 +142,7 @@ if (!(isset($_SESSION['email']))) {
                                 <div class="form-group">
                                     <label class="col-md-12 control-label" for="wrong"></label>  
                                     <div class="col-md-12">
-                                        <input id="wrong" name="wrong" placeholder="Enter minus marks on wrong answer without sign" class="form-control input-md" min="0" type="number">
+                                        <input id="wrong" name="wrong" placeholder="Enter minus marks on wrong answer without sign" class="form-control input-md" min="0" type="number" value=0 hidden>
                                     </div>
                                 </div>
                                 
