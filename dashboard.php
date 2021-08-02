@@ -42,6 +42,7 @@ if (!(isset($_SESSION['email']))) {
                     <li class="dropdown <?php if (@$_GET['q'] == 4 || @$_GET['q'] == 5) echo'active"'; ?>">
                     <li class="nav-item"><a href="dashboard.php?q=4" class="nav-link">Add Quiz</a></li>
                     <li class="nav-item"><a href="dashboard.php?q=5" class="nav-link">Remove Quiz</a></li>
+                     <li class="nav-item"><a href="dashboard.php?q=6" class="nav-link">Feedback</a></li>
                 </ul>
                 <ul class="nav navbar-nav ml-auto">
                     <div class="header-btn-lg pr-0">
@@ -241,6 +242,21 @@ if (!(isset($_SESSION['email']))) {
     <center><b><a href="update.php?q=rmquiz&eid=' . $eid . '" class="pull-right btn sub1" style="margin:5px;background:red;color:black"><i class="bi bi-trash-fill"></i>&nbsp;<span class="title1"><b>Remove</b></span></a></b></center></td>';
                         }
                         $c = 0;
+                        echo '</table></div></div>';
+                    }
+                    ?>
+                     <?php
+                    if (@$_GET['q'] == 6) {
+                        $result = mysqli_query($link, "SELECT * FROM feedback") or die('Error');
+                        echo '<div class="panel"><div class="table-responsive"><table class="table table-striped title">
+                        <tr><td><center><b>Subject</b></center></td><td><center><b>Name</b></center></td><td><center><b>Email</b></center></td><td><center><b>Comments</b></center></td><tr>';
+                        while ($row = mysqli_fetch_array($result)) {
+                            $subject = $row['subject'];
+                            $name = $row['name'];
+                            $email = $row['email'];
+                            $comments = $row['comments'];
+                            echo '<tr><td><center style="margin-top:30px;font-size: 20px;">' . $subject . '</center></td><td><center style="margin-top:30px;font-size: 20px;">' . $name . '</center></td><td><center style="margin-top:30px;font-size: 20px;">' . $email . '</center></td><td><center style="margin-top:30px;font-size: 20px;">' . $comments . '</center></td>';
+                        }
                         echo '</table></div></div>';
                     }
                     ?>
