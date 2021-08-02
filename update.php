@@ -9,7 +9,7 @@ if (isset($_SESSION['key'])) {
         $demail = @$_GET['demail'];
         $r1 = mysqli_query($link, "DELETE FROM rank WHERE email='$demail' ") or die('Error');
         $r2 = mysqli_query($link, "DELETE FROM history WHERE email='$demail' ") or die('Error');
-        $result = mysqli_query($link, "DELETE FROM users WHERE email='$demail' ") or die('Error');
+        $result = mysqli_query($link, "DELETE FROM users WHERE userName='$demail' ") or die('Error');
         header("location:dashboard.php?q=1");
     }
 }
