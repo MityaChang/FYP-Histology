@@ -1,12 +1,7 @@
 <?php
 session_start();
 $email = $_SESSION['email'];
-
-
-$name = mysqli_query($link, "SELECT * FROM users WHERE userName='$email'");
-while ($row = mysqli_fetch_array($name)) {
-    $username = $row['userEmail'];
-}
+$userName = $_SESSION['username'];
 
 
 ?>
@@ -73,7 +68,7 @@ while ($row = mysqli_fetch_array($name)) {
                         </div>
                         <div class="form-group w-50">
                             <h3>Name:</h3>
-                            <input class="form-control" id="id_name" type="text" name="name" value="<?php echo $username ?>" readonly="">
+                            <input class="form-control" id="id_name" type="text" name="name" value="<?php echo $userName ?>" readonly="">
 
                         </div>
                         <div class="form-group w-50">
