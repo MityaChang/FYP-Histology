@@ -23,7 +23,9 @@ if (!(isset($_SESSION['email']))) {
         <script src="js/jquery.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js"  type="text/javascript"></script>
         <script src="js/imageZoom.js" type="text/javascript"></script>
+        <script src="js/table2excel.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
     </head>
     <style>
         .navbar-custom{
@@ -249,7 +251,7 @@ if (!(isset($_SESSION['email']))) {
                     if (@$_GET['q'] == 2) {
                         $q = mysqli_query($link, "SELECT * FROM history WHERE email='$email' ORDER BY date DESC ")or die('Error197');
                         echo '<div class="panel title">
-                        <table class="table table-striped title1" >
+                                                <table class="table table-striped title1" id="excelTable">
                         <tr style="color:black;"><td><center><b>S.N.</b></center></td><td><center><b>Quiz</b></center></td><td><center><b>Question Solved</b></center></td><td><center><b>Right</b></center></td><td><center><b>Wrong<b></center></td><td><center><b>Score</b></center></td>';
                         $c = 0;
                         while ($row = mysqli_fetch_array($q)) {
@@ -266,7 +268,13 @@ if (!(isset($_SESSION['email']))) {
                             $c++;
                             echo '<tr><td><center>' . $c . '</center></td><td><center>' . $title . '</center></td><td><center>' . $qa . '</center></td><td><center>' . $r . '</center></td><td><center>' . $w . '</center></td><td><center>' . $s . '</center></td></tr>';
                         }
-                        echo'</table></div>';
+                        echo'</table>'
+                        . '       <script>
+            document.getElementById("#downloadexcel").addEventListener("click",function(){
+                                var table2exCel = new Table2Excel();
+                table2exCel.export(document.querySelectorAll("#excelTable"));
+            });
+                </script></div>';
                     }
 
                     if (@$_GET['q'] == 3) {
