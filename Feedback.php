@@ -1,3 +1,10 @@
+<?php
+session_start();
+$email = $_SESSION['email'];
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -66,7 +73,7 @@
                         </div>
                         <div class="form-group w-50">
                             <h3>Email:</h3>
-                            <input class="form-control" id="id_email" type="text" name="email" placeholder="E.g 1987567@rp.edu.sg" required>
+                            <input class="form-control" id="id_email" type="text" name="email" required value="<?php echo $email ?>" readonly="">
                         </div>
                         <div class="form-group w-75">
                             <h3>Comments:</h3>
