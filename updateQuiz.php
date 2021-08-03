@@ -29,7 +29,6 @@ if (isset($_SESSION['key'])) {
             }
         }
 
-
         ?>
             <html>
                 <head>
@@ -92,7 +91,7 @@ if (isset($_SESSION['key'])) {
                         <div class="row" style="align-items: center; justify-content: center;">
                         <h2 class="col-12 text-center">Enter Question Details</h2>
                         <div class="col-md-7">
-                        <form class="form-horizontal title1" name="form" action="doUpdate.php" method="POST" enctype="multipart/form-data" >
+                        <form class="form-horizontal title1" name="form" action="doUpdate.php?total=<?php echo count($options)?>&eid=<?php echo $eid?>&totalQues=<?php echo $total?>" method="POST">
                         <fieldset>
               <?php                  for ($i = 0; $i <= count($options); $i++) {
             ?>
@@ -100,7 +99,7 @@ if (isset($_SESSION['key'])) {
                                     <div class="form-group">
                                         <label class="col-md-12 control-label" for="qns' . <?php echo $i+1 ?> . ' "></label>  
                                         <div class="col-md-12">
-                                            <textarea rows="3" cols="5" name="question' . <?php echo $i ?> . '" class="form-control"><?php echo $questionName[$i] ?></textarea>  
+                                            <textarea rows="3" cols="5" name="question<?php echo $i ?>" class="form-control"><?php echo $questionName[$i] ?></textarea>  
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -111,31 +110,31 @@ if (isset($_SESSION['key'])) {
                                         <div class="form-group">
                                             <label class="col-md-12 control-label" for="' . <?php echo $i ?> . '1"></label>  
                                             <div class="col-md-12">
-                                                <input id="' . <?php echo $i+1 ?> . '1" name="' . <?php echo $i+1 ?> . '1" value="<?php echo $options[$i]['option'] ?>" class="form-control input-md" type="text">
+                                                <input id="' . <?php echo $i+1 ?> . '1" name="option<?php echo $i ?>" value="<?php echo $options[$i]['option'] ?>" class="form-control input-md" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-12 control-label" for="' . <?php echo $i ?> . '2"></label>  
                                             <div class="col-md-12">
-                                                <input id="' . <?php echo $i ?> . '2" name="' . <?php echo $i ?> . '2" value="<?php echo $options[$i + 1]['option'] ?>" class="form-control input-md" type="text">
+                                                <input id="' . <?php echo $i ?> . '2" name="option<?php echo $i+1 ?>" value="<?php echo $options[$i + 1]['option'] ?>" class="form-control input-md" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-12 control-label" for="' . <?php $i ?> . '3"></label>  
                                             <div class="col-md-12">
-                                                <input id="' . <?php echo $i ?> . '3" name="' . <?php echo $i ?> . '3"  value="<?php echo $options[$i + 2]['option'] ?>" class="form-control input-md" type="text">
+                                                <input id="' . <?php echo $i ?> . '3" name="option<?php echo $i+2 ?>"  value="<?php echo $options[$i + 2]['option'] ?>" class="form-control input-md" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-12 control-label" for="' . <?php echo $i ?>  . '4"></label>  
                                             <div class="col-md-12">
-                                                <input id="' . <?php $i ?>. '4" name="' . <?php $i ?> . '4"  value="<?php echo $options[$i + 3]['option'] ?>" class="form-control input-md" type="text">
+                                                <input id="' . <?php $i ?>. '4" name="option<?php echo $i+3 ?>"  value="<?php echo $options[$i + 3]['option'] ?>" class="form-control input-md" type="text">
                                             </div>
                                         </div>
                                         <br />
                                         <b>Correct answer</b>:<br />
-                                        <select id="ans'. <?php echo $i ?>.'" name="ans' .<?php echo $i ?>. '" placeholder="Choose correct answer " class="form-control input-md" >
-                                            <option value="a" selected="selected"><?php echo $answers[$i] ?></option>
+                                        <select id="ans<?php echo $i ?>" name="ans<?php echo $i ?>" placeholder="Choose correct answer " class="form-control input-md" >
+                                            <option value="<?php echo $answers[$i]?>" selected="selected"><?php echo $answers[$i] ?></option>
                                             <option value="a"> option a</option>
                                             <option value="b"> option b</option>
                                             <option value="c"> option c</option>
@@ -145,31 +144,31 @@ if (isset($_SESSION['key'])) {
                                         <div class="form-group">
                                             <label class="col-md-12 control-label" for="' . <?php echo $i ?> . '1"></label>  
                                             <div class="col-md-12">
-                                                <input id="' . <?php echo $i ?> . '1" name="' . <?php echo $i ?> . '1" value="<?php echo $options[($i * 4)]['option'] ?>" class="form-control input-md" type="text">
+                                                <input id="' . <?php echo $i ?> . '1" name="option<?php echo $i*4 ?>" value="<?php echo $options[($i * 4)]['option'] ?>" class="form-control input-md" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-12 control-label" for="' . <?php echo $i ?> . '2"></label>  
                                             <div class="col-md-12">
-                                                <input id="' . <?php echo $i ?> . '2" name="' .<?php echo $i ?>. '2" value="<?php echo $options[($i * 4) + 1]['option'] ?>" class="form-control input-md" type="text">
+                                                <input id="' . <?php echo $i ?> . '2" name="option<?php echo ($i*4) +1 ?>" value="<?php echo $options[($i * 4) + 1]['option'] ?>" class="form-control input-md" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-12 control-label" for="' .  <?php echo $i  ?>. '3"></label>  
                                             <div class="col-md-12">
-                                                <input id="' . $i . '3" name="' . <?php echo $i ?> . '3" value="<?php echo $options[($i * 4) + 2]['option'] ?>" class="form-control input-md" type="text">
+                                                <input id="' . $i . '3" name="option<?php echo ($i*4) +2 ?>" value="<?php echo $options[($i * 4) + 2]['option'] ?>" class="form-control input-md" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-md-12 control-label" for="' . <?php echo $i ?> . '4"></label>  
                                             <div class="col-md-12">
-                                                <input id="' . $i . '4" name="' . <?php echo $i ?>. '4" value="<?php echo $options[($i * 4) + 3]['option'] ?>" class="form-control input-md" type="text">
+                                                <input id="' . $i . '4" name="option<?php echo ($i*4) +3 ?>" value="<?php echo $options[($i * 4) + 3]['option'] ?>" class="form-control input-md" type="text">
                                             </div>
                                         </div>
                                         <br />
                                         <b>Correct answer</b>:<br />
-                                        <select id="ans' . <?php echo $i ?> . '" name="ans' . <?php echo $i ?> . '" placeholder="Choose correct answer " class="form-control input-md" >
-                                            <option value="a" selected="selected"><?php echo $answers[$i] ?></option>
+                                        <select id="ans<?php echo $i ?>" name="ans<?php echo $i ?>" placeholder="Choose correct answer " class="form-control input-md" >
+                                            <option value="<?php echo $answers[$i]?>" selected="selected"><?php echo $answers[$i] ?></option>
                                             <option value="a"> option a</option>
                                             <option value="b"> option b</option>
                                             <option value="c"> option c</option>
