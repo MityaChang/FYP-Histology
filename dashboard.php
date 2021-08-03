@@ -39,7 +39,7 @@ if (!(isset($_SESSION['email']))) {
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-custom">
-            <a class="navbar-brand">Online Quiz System</a>
+            <a class="navbar-brand"><b>Online Quiz System</b></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
