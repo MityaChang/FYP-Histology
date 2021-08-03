@@ -39,7 +39,7 @@ if (!(isset($_SESSION['email']))) {
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-custom">
-            <a class="navbar-brand" href="#">Online Quiz System</a>
+            <a class="navbar-brand">Online Quiz System</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -65,8 +65,6 @@ if (!(isset($_SESSION['email']))) {
                                             <i class="bi bi-caret-down"></i>
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(-100px, 21px, 0px); top: 0px; left: 0px; will-change: transform;">
-                                            <button type="button" tabindex="0" class="dropdown-item"><i class="bi bi-person"></i>Admin Account</button>
-                                            <div tabindex="-1" class="dropdown-divider"></div>
                                             <a class="dropdown-item" href="logout1.php?q=dashboard.php"><i class="bi bi-box-arrow-right"></i>&nbsp;Log out</a></li>
 
                                         </div>

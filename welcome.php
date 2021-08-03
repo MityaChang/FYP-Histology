@@ -133,7 +133,7 @@ if (!(isset($_SESSION['email']))) {
                         $c = 0;
                         echo '</table></div></div>';
                     }
-                    ?>
+                    ?>  
 
                     <?php
                     if (@$_GET['q'] == 'quiz' && @$_GET['step'] == 2) {
@@ -180,7 +180,7 @@ if (!(isset($_SESSION['email']))) {
                             $r = $row['sahi'];
                             $qa = $row['level'];
                             echo '<tr style="color:#66CCFF"><td>Total Questions</td><td>' . $qa . '</td></tr>
-                                <tr style="color:#99cc32"><td>right Answer&nbsp;<i class="bi bi-check-circle"></i></td><td>' . $r . '</td></tr> 
+                                <tr style="color:#99cc32"><td>Right Answer&nbsp;<i class="bi bi-check-circle"></i></td><td>' . $r . '</td></tr> 
                                 <tr style="color:red"><td>Wrong Answer&nbsp;<i class="bi bi-x-octagon-fill"></i></td><td>' . $w . '</td></tr>
                                 <tr style="color:#66CCFF"><td>Score&nbsp;<i class="bi bi-clipboard-data"></i></td><td>' . $s . '</td></tr>';
                         }
