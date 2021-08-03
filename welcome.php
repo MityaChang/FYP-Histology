@@ -189,8 +189,59 @@ if (!(isset($_SESSION['email']))) {
                             $s = $row['score'];
                             echo '<tr style="color:#990000"><td>Overall Score&nbsp;<i class="bi bi-calendar-check"></i></td><td>' . $s . '</td></tr>';
                         }
-                        echo '</table><input class="btn btn-warning" type="submit" value="View Summary">'
-                        . '<input class="btn btn-warning" type="submit" value="Challenge fill in blank"></div>';
+                        echo '</table></div>';
+                        echo '<div class="panel title"><div class="table-responsive">
+                        <table class="table table-striped title1" >
+                        <tr style="color:red"><td><center><b>Question no.</b></center></td><td><center><b>Question Title</b></center></td><td><center><b>Correct Answer</b></center></td><td><center><b>Marks Obatined</b></center></td></tr>';
+                        //Display Summary Page
+                        $c = 0;
+                        $eid = @$_GET['eid'];
+                        $quiz = mysqli_query($link, "SELECT * FROM quiz WHERE eid='$eid' ")or die('QuizError');
+                        while ($row = mysqli_fetch_array($quiz)) {
+                            $total = $row['total'];
+                        }
+
+                        $question = mysqli_query($link, "SELECT * FROM `questions` WHERE eid='$eid'") or die('QuestionError');
+                        while ($row = mysqli_fetch_array($question)) {
+                            $qid[] = $row['qid'];
+                            $questionName[] = $row['qns'];
+                        }
+                        for ($i = 0; $i <= count($question); $i++) {
+
+                            echo '';
+                        }
+                        for ($i = 0; $i < count($qid); $i++) {
+                            ${"variable$i"} = $qid[$i];
+                            $option = mysqli_query($link, "SELECT * FROM options WHERE qid='$qid[$i]'") or die('OptionsError');
+                            while ($row = mysqli_fetch_array($option)) {
+                                $options[] = $row;
+                            }
+                        }
+
+                        for ($i = 0; $i < count($qid); $i++) {
+                            $answer = mysqli_query($link, "SELECT * FROM answer WHERE qid='$qid[$i]'") or die('AnswerError');
+                            while ($row = mysqli_fetch_array($answer)) {
+                                $answers[] = $row['ansid'];
+//                            echo '<td style="color:black"><center><b>' . $answer[$i] . '</b></center></td>';
+                            }
+                            $q = mysqli_query($link, "SELECT * FROM history WHERE eid='$eid' AND email='$email' ")or die('Error115');
+                            while ($row = mysqli_fetch_array($q)) {
+                                $r = $row['sahi'];
+                                $w = $row['wrong'];
+                            }
+                            for ($i = 0; $i <= count($answer); $i++) {
+                                for ($i = 0; $i <= count($options); $i++) {
+
+                                    echo '<tr><td style="color:black"><center><b>' . ($i + 1) . '</b></center></td><td style="color:black"><center><b>' . $questionName[$i] . '</b></center></td><td style="color:black"><center><b>' . $options[($i * 4) + 1]['option'] . '</b></center></td><td style="color:black"><center><b>' . $r . '</b></center></td></tr>';
+
+                                    if ($i >= $total - 1) {
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+
+                        echo '</table></div></div>';
                     }
                     ?>
 
