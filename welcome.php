@@ -25,9 +25,7 @@ if (!(isset($_SESSION['email']))) {
         <script src="js/imageZoom.js" type="text/javascript"></script>
         <script src="js/table2excel.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-    </head>
-    <style>
+<style>
         .navbar-custom{
             background-image: url("./img/banner-SAS.jpg");
             -webkit-background-size: cover;
@@ -76,6 +74,8 @@ if (!(isset($_SESSION['email']))) {
                 }*/
 
     </style>
+    </head>
+    
     <body>
         <nav class="navbar navbar-custom title1">
 
