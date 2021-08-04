@@ -174,27 +174,27 @@ if (!(isset($_SESSION['email']))) {
                         $eid = @$_GET['eid'];
                         $q = mysqli_query($link, "SELECT * FROM history WHERE eid='$eid' AND email='$email' ")or die('Error157');
                         echo '<div class="panel">
-                        <center><h1 class="title" style="color:#660033">Result</h1><center><br /><table class="table table-striped title1" style="font-size:20px;font-weight:1000;">';
+                        <center><h1 class="title" style="color:#660033">Results</h1><center><br /><table class="table table-striped title1" style="font-size:20px;font-weight:1000;">';
 
                         while ($row = mysqli_fetch_array($q)) {
                             $s = $row['score'];
                             $w = $row['wrong'];
                             $r = $row['sahi'];
                             $qa = $row['level'];
-                            echo '<tr style="color:#66CCFF"><td>Total Questions</td><td>' . $qa . '</td></tr>
-                                <tr style="color:#99cc32"><td><i class="bi bi-check-circle"></i>Right Answer&nbsp;</td><td>' . $r . '</td></tr> 
-                                <tr style="color:red"><td><i class="bi bi-x-octagon-fill"></i>Wrong Answer&nbsp;</td><td>' . $w . '</td></tr>
-                                <tr style="color:#66CCFF"><td><i class="bi bi-clipboard-data"></i>Score&nbsp;</td><td>' . $s . '</td></tr>';
+                            echo '<tr style="color:#66CCFF">&nbsp;&nbsp;&nbsp;&nbsp;<td>Total Questions</td><td>' . $qa . '</td></tr>
+                                <tr style="color:#99cc32"><td><i class="bi bi-check-circle">&nbsp;</i>Correct Answers&nbsp;</td><td>' . $r . '</td></tr> 
+                                <tr style="color:red"><td><i class="bi bi-x-octagon-fill">&nbsp;</i>Incorrect Answers&nbsp;</td><td>' . $w . '</td></tr>
+                                <tr style="color:#66CCFF"><td><i class="bi bi-clipboard-data">&nbsp;</i>Score&nbsp;</td><td>' . $s . '</td></tr>';
                         }
                         $q = mysqli_query($link, "SELECT * FROM rank WHERE  email='$email' ")or die('Error157');
                         while ($row = mysqli_fetch_array($q)) {
                             $s = $row['score'];
-                            echo '<tr style="color:#990000"><td><i class="bi bi-calendar-check"></i>Overall Score&nbsp;</td><td>' . $s . '</td></tr>';
+//                            echo '<tr style="color:#990000"><td><i class="bi bi-calendar-check">&nbsp;</i>Overall Score&nbsp;</td><td>' . $s . '</td></tr>';
                         }
                         echo '</table></div>';
                         echo '<div class="panel title"><div class="table-responsive">
                         <table class="table table-striped title1" >
-                        <tr style="color:red"><td><center><b>Question No.</b></center></td><td><b>Question Title</b></td><td><b>Correct Answers</center></td><td><center><b>Marks Obtained</b></center></td></tr>';
+                        <tr style="color:red"><td><center><b>Question No.</b></center></td><td><b>Question Title</center></b></td><td><b>Correct Answers</center></td><td><center><b>Marks Obtained</b></center></td></tr>';
                         //Display Summary Page
                         $c = 0;
                         $eid = @$_GET['eid'];
@@ -234,7 +234,7 @@ if (!(isset($_SESSION['email']))) {
                             for ($i = 0; $i <= count($answer); $i++) {
                                 for ($i = 0; $i <= count($options); $i++) {
 
-                                    echo '<tr><td style="color:black"><center><b>' . ($i + 1) . '</b></center></td><td style="color:black"><center><b>' . $questionName[$i] . '</b></center></td><td style="color:black"><center><b>' . $options[($i * 4) + 1]['option'] . '</b></center></td><td style="color:black"><center><b>' . $r . '</b></center></td></tr>';
+                                    echo '<tr><td style="color:black"><center><b>' . ($i + 1) . '</b></center></td><td style="color:black"><b>' . $questionName[$i] . '</b></td><td style="color:black"><center><b>' . $options[($i * 4) + 1]['option'] . '</b></center></td><td style="color:black"><center><b>' . $r . '</b></center></td></tr>';
 
                                     if ($i >= $total - 1) {
                                         break;
