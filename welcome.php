@@ -23,7 +23,9 @@ if (!(isset($_SESSION['email']))) {
         <script src="js/jquery.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js"  type="text/javascript"></script>
         <script src="js/imageZoom.js" type="text/javascript"></script>
+        <script src="js/table2excel.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
     </head>
     <style>
         .navbar-custom{
@@ -189,8 +191,59 @@ if (!(isset($_SESSION['email']))) {
                             $s = $row['score'];
                             echo '<tr style="color:#990000"><td>Overall Score&nbsp;<i class="bi bi-calendar-check"></i></td><td>' . $s . '</td></tr>';
                         }
-                        echo '</table><input class="btn btn-warning" type="submit" value="View Summary">'
-                        . '<input class="btn btn-warning" type="submit" value="Challenge fill in blank"></div>';
+                        echo '</table></div>';
+                        echo '<div class="panel title"><div class="table-responsive">
+                        <table class="table table-striped title1" >
+                        <tr style="color:red"><td><center><b>Question no.</b></center></td><td><center><b>Question Title</b></center></td><td><center><b>Correct Answer</b></center></td><td><center><b>Marks Obatined</b></center></td></tr>';
+                        //Display Summary Page
+                        $c = 0;
+                        $eid = @$_GET['eid'];
+                        $quiz = mysqli_query($link, "SELECT * FROM quiz WHERE eid='$eid' ")or die('QuizError');
+                        while ($row = mysqli_fetch_array($quiz)) {
+                            $total = $row['total'];
+                        }
+
+                        $question = mysqli_query($link, "SELECT * FROM `questions` WHERE eid='$eid'") or die('QuestionError');
+                        while ($row = mysqli_fetch_array($question)) {
+                            $qid[] = $row['qid'];
+                            $questionName[] = $row['qns'];
+                        }
+                        for ($i = 0; $i <= count($question); $i++) {
+
+                            echo '';
+                        }
+                        for ($i = 0; $i < count($qid); $i++) {
+                            ${"variable$i"} = $qid[$i];
+                            $option = mysqli_query($link, "SELECT * FROM options WHERE qid='$qid[$i]'") or die('OptionsError');
+                            while ($row = mysqli_fetch_array($option)) {
+                                $options[] = $row;
+                            }
+                        }
+
+                        for ($i = 0; $i < count($qid); $i++) {
+                            $answer = mysqli_query($link, "SELECT * FROM answer WHERE qid='$qid[$i]'") or die('AnswerError');
+                            while ($row = mysqli_fetch_array($answer)) {
+                                $answers[] = $row['ansid'];
+//                            echo '<td style="color:black"><center><b>' . $answer[$i] . '</b></center></td>';
+                            }
+                            $q = mysqli_query($link, "SELECT * FROM history WHERE eid='$eid' AND email='$email' ")or die('Error115');
+                            while ($row = mysqli_fetch_array($q)) {
+                                $r = $row['sahi'];
+                                $w = $row['wrong'];
+                            }
+                            for ($i = 0; $i <= count($answer); $i++) {
+                                for ($i = 0; $i <= count($options); $i++) {
+
+                                    echo '<tr><td style="color:black"><center><b>' . ($i + 1) . '</b></center></td><td style="color:black"><center><b>' . $questionName[$i] . '</b></center></td><td style="color:black"><center><b>' . $options[($i * 4) + 1]['option'] . '</b></center></td><td style="color:black"><center><b>' . $r . '</b></center></td></tr>';
+
+                                    if ($i >= $total - 1) {
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+
+                        echo '</table></div></div>';
                     }
                     ?>
 
@@ -198,7 +251,7 @@ if (!(isset($_SESSION['email']))) {
                     if (@$_GET['q'] == 2) {
                         $q = mysqli_query($link, "SELECT * FROM history WHERE email='$email' ORDER BY date DESC ")or die('Error197');
                         echo '<div class="panel title">
-                        <table class="table table-striped title1" >
+                                                <table class="table table-striped title1" id="excelTable">
                         <tr style="color:black;"><td><center><b>S.N.</b></center></td><td><center><b>Quiz</b></center></td><td><center><b>Question Solved</b></center></td><td><center><b>Right</b></center></td><td><center><b>Wrong<b></center></td><td><center><b>Score</b></center></td>';
                         $c = 0;
                         while ($row = mysqli_fetch_array($q)) {
@@ -215,7 +268,13 @@ if (!(isset($_SESSION['email']))) {
                             $c++;
                             echo '<tr><td><center>' . $c . '</center></td><td><center>' . $title . '</center></td><td><center>' . $qa . '</center></td><td><center>' . $r . '</center></td><td><center>' . $w . '</center></td><td><center>' . $s . '</center></td></tr>';
                         }
-                        echo'</table></div>';
+                        echo'</table>'
+                        . '       <script>
+            document.getElementById("#downloadexcel").addEventListener("click",function(){
+                                var table2exCel = new Table2Excel();
+                table2exCel.export(document.querySelectorAll("#excelTable"));
+            });
+                </script></div>';
                     }
 
                     if (@$_GET['q'] == 3) {
