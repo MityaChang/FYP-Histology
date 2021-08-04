@@ -89,7 +89,7 @@ if (isset($_SESSION['key'])) {
                             <div class="col-md-12">
                                           
                         <div class="row" style="align-items: center; justify-content: center;">
-                        <h2 class="col-12 text-center">Enter Question Details</h2>
+                        <h2 class="col-12 text-center">Update Question Details</h2>
                         <div class="col-md-7">
                         <form class="form-horizontal title1" name="form" action="doUpdate.php?total=<?php echo count($options)?>&eid=<?php echo $eid?>&totalQues=<?php echo $total?>" method="POST">
                         <fieldset>
