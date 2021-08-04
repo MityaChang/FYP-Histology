@@ -182,9 +182,9 @@ if (!(isset($_SESSION['email']))) {
                             $r = $row['sahi'];
                             $qa = $row['level'];
                             echo '<tr style="color:#66CCFF"><td>Total Questions</td><td>' . $qa . '</td></tr>
-                                <tr style="color:#99cc32"><td>Right Answer&nbsp;<i class="bi bi-check-circle"></i></td><td>' . $r . '</td></tr> 
-                                <tr style="color:red"><td>Wrong Answer&nbsp;<i class="bi bi-x-octagon-fill"></i></td><td>' . $w . '</td></tr>
-                                <tr style="color:#66CCFF"><td>Score&nbsp;<i class="bi bi-clipboard-data"></i></td><td>' . $s . '</td></tr>';
+                                <tr style="color:#99cc32"><td><i class="bi bi-check-circle"></i>Right Answer&nbsp;</td><td>' . $r . '</td></tr> 
+                                <tr style="color:red"><td><i class="bi bi-x-octagon-fill"></i>Wrong Answer&nbsp;</td><td>' . $w . '</td></tr>
+                                <tr style="color:#66CCFF"><td><i class="bi bi-clipboard-data"></i>Score&nbsp;</td><td>' . $s . '</td></tr>';
                         }
                         $q = mysqli_query($link, "SELECT * FROM rank WHERE  email='$email' ")or die('Error157');
                         while ($row = mysqli_fetch_array($q)) {
@@ -194,7 +194,7 @@ if (!(isset($_SESSION['email']))) {
                         echo '</table></div>';
                         echo '<div class="panel title"><div class="table-responsive">
                         <table class="table table-striped title1" >
-                        <tr style="color:red"><td><center><b>Question no.</b></center></td><td><center><b>Question Title</b></center></td><td><center><b>Correct Answer</b></center></td><td><center><b>Marks Obatined</b></center></td></tr>';
+                        <tr style="color:red"><td><center><b>Question No.</b></center></td><td><b>Question Title</b></td><td><b>Correct Answers</center></td><td><center><b>Marks Obtained</b></center></td></tr>';
                         //Display Summary Page
                         $c = 0;
                         $eid = @$_GET['eid'];
