@@ -189,7 +189,7 @@ if (!(isset($_SESSION['email']))) {
                         $q = mysqli_query($link, "SELECT * FROM rank WHERE  email='$email' ")or die('Error157');
                         while ($row = mysqli_fetch_array($q)) {
                             $s = $row['score'];
-                            echo '<tr style="color:#990000"><td>Overall Score&nbsp;<i class="bi bi-calendar-check"></i></td><td>' . $s . '</td></tr>';
+                            echo '<tr style="color:#990000"><td><i class="bi bi-calendar-check"></i>Overall Score&nbsp;</td><td>' . $s . '</td></tr>';
                         }
                         echo '</table></div>';
                         echo '<div class="panel title"><div class="table-responsive">
