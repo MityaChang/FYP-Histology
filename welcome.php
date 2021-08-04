@@ -94,7 +94,7 @@ if (!(isset($_SESSION['email']))) {
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-left">
                         <!-- this echo ask qikai if needed -->
-                        <li <?php if (@$_GET['q'] == 1) echo'class="active"'; ?> class="nav-item active"> <a href="welcome.php?q=1" id="textColor" class="nav-link"><i class="bi bi-house-door-fill"></i>&nbsp;Home</a></li>
+                        <li <?php if (@$_GET['q'] == 1) echo'class="active"'; ?> class="nav-item"> <a href="welcome.php?q=1" id="textColor" class="nav-link"><i class="bi bi-house-door-fill"></i>&nbsp;Home</a></li>
                         <li <?php if (@$_GET['q'] == 2) echo'class="active"'; ?> class="nav-item"> <a href="welcome.php?q=2" id="textColor" class="nav-link"><i class="bi bi-book"></i>&nbsp;History</a></li>
                         <li <?php if (@$_GET['q'] == 3) echo'class="active"'; ?>  class="nav-item"> <a href="welcome.php?q=3" id="textColor" class="nav-link"><i class="bi bi-bar-chart-line-fill"></i>&nbsp;Ranking</a></li>
 
